@@ -1,0 +1,26 @@
+package com.example.gabr.pierwszaaplikacja;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.ImageView;
+
+public class View_Listener_Click extends Activity {
+	
+	TextView	text;
+	ImageView	image;
+	Button		button;
+	
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.view_listener_click);
+		
+		text = (TextView) findViewById(R.id.textViewListener1);
+		image = (ImageView) findViewById(R.id.imageViewListener1);
+		button = (Button) findViewById(R.id.buttonListener1);
+	}
+
+}

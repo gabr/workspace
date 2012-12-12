@@ -1,0 +1,24 @@
+package com.example.gabr.pierwszaaplikacja;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.ImageView;
+
+public class View_Listener_Click extends Activity {
+	
+	TextView text;
+	ImageView image;
+	Button button;
+	
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.activity_main);
+		
+		
+	}
+
+}

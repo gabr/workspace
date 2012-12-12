@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".View_Custom_List"></activity>
+        <activity android:name=".View_Listener_Click"></activity>
     </application>
 
 </manifest>

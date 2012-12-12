@@ -1,0 +1,14 @@
+package com.example.gabr.pierwszaaplikacja;
+
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class View_Listener_Click extends Activity {
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.activity_main);
+	}
+
+}

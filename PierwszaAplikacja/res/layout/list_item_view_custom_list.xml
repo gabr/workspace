@@ -18,6 +18,7 @@
         android:layout_centerVertical="true"
         android:layout_marginLeft="28dp"
         android:layout_toRightOf="@+id/imageView1"
-        android:text="@string/list_item_1_string" />
+        android:text="@string/list_item_1_string"
+        android:textSize="23sp" />
 
 </RelativeLayout>
