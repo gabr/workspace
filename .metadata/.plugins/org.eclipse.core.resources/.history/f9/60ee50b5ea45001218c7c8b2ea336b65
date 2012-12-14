@@ -1,0 +1,37 @@
+package com.example.gabr.pierwszaaplikacja;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class ButtonsList extends Activity implements OnClickListener {
+	
+	Button normal;
+
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.buttons_list);
+		
+		normal = (Button) findViewById(R.id.but_normal);
+		
+	}
+	
+	public void imageButtonAction(View view){
+		Intent startActivityMain = new Intent(ButtonsList.this,
+    			MainActivity.class);
+    	startActivity(startActivityMain);
+	}
+	
+	public void onClick(View v) {	
+		switch(v.getId()) {
+		case R.id.but_normal:
+			
+        	break;
+		}
+	}
+}

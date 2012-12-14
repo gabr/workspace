@@ -1,0 +1,21 @@
+package com.example.gabr.pierwszaaplikacja;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+
+public class ButtonsList extends Activity {
+
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.buttons_list);
+	}
+	
+	public void imageButtonAction(View view){
+		Intent startActivityMain = new Intent(ButtonsList.this,
+    			MainActivity.class);
+    	startActivity(startActivityMain);
+	}
+}

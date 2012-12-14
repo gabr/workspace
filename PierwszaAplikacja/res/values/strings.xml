@@ -11,5 +11,11 @@
     <string name="image_description">ImageDescription</string>
     <string name="button_description">Press me to return :)</string>
     <string name="text_description">Testowy tekst</string>
+    
+    <string name="but_normal">normal</string>
+    <string name="but_focused">focused</string>
+    <string name="but_pressed">pressed</string>
+    <string name="but_focusedDisable">focused disable</string>
+    <string name="but_disable">disable</string>
 
 </resources>

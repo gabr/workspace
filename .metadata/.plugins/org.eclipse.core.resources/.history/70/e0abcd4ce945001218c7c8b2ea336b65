@@ -1,0 +1,13 @@
+package com.example.gabr.pierwszaaplikacja;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class ButtonsList extends Activity {
+
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.buttons_list);
+	}
+}
