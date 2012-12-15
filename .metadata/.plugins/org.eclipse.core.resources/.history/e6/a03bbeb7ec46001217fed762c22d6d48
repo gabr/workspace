@@ -1,0 +1,6 @@
+public class Zmienne {
+	public static void main(String args[]) {
+		double promienKola = 10.0;
+	}
+
+}

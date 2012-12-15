@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="9" version="2.0">
+<workbench progressCount="8" version="2.0">
 <workbenchAdvisor/>
 <window height="892" maximized="true" width="1076" x="0" y="1">
 <fastViewData fastViewLocation="1024"/>
@@ -18,7 +18,7 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="26"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="62" y="26"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="36" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -55,8 +55,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (5 items)"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -66,6 +65,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -93,9 +95,6 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control"/>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
@@ -233,13 +232,13 @@
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3451464"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.34398976"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -303,9 +302,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -322,6 +318,24 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Petle.java" tooltip="Lekcja 10 - petle/src/Petle.java">
+<persistable path="/Lekcja 10 - petle/src/Petle.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Lekcja2.java" tooltip="Kurs Java 2: Instalujemy eclipse/src/Lekcja2.java">
+<persistable path="/Kurs Java 2: Instalujemy eclipse/src/Lekcja2.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="main.java" tooltip="Kurs Java 2: Instalujemy eclipse/src/main.java">
+<persistable path="/Kurs Java 2: Instalujemy eclipse/src/main.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ButtonsList.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java">
+<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="lineary_layout.xml" tooltip="PierwszaAplikacja/res/layout/lineary_layout.xml">
+<persistable path="/PierwszaAplikacja/res/layout/lineary_layout.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="PierwszaAplikacja/AndroidManifest.xml">
+<persistable path="/PierwszaAplikacja/AndroidManifest.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="buttons_custom.xml" tooltip="PierwszaAplikacja/res/drawable/buttons_custom.xml">
 <persistable path="/PierwszaAplikacja/res/drawable/buttons_custom.xml"/>
 </file>
@@ -334,9 +348,6 @@
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Activity.class" tooltip="android.app.Activity">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=PierwszaAplikacja/\/home\/gabr\/bin\/adt-bundle-linux-x86\/sdk\/platforms\/android-4.2\/android.jar&lt;android.app(Activity.class"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ButtonsList.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java">
 <persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java"/>
 </file>
@@ -348,24 +359,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="list_item_view_custom_list.xml" tooltip="PierwszaAplikacja/res/layout/list_item_view_custom_list.xml">
 <persistable path="/PierwszaAplikacja/res/layout/list_item_view_custom_list.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="PierwszaAplikacja/AndroidManifest.xml">
-<persistable path="/PierwszaAplikacja/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LinearyLayout.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/LinearyLayout.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/LinearyLayout.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="strings.xml" tooltip="PierwszaAplikacja/res/values/strings.xml">
-<persistable path="/PierwszaAplikacja/res/values/strings.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="lineary_layout.xml" tooltip="PierwszaAplikacja/res/layout/lineary_layout.xml">
-<persistable path="/PierwszaAplikacja/res/layout/lineary_layout.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="activity_main.xml" tooltip="PierwszaAplikacja/res/layout/activity_main.xml">
-<persistable path="/PierwszaAplikacja/res/layout/activity_main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="View_Custom_List.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/View_Custom_List.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/View_Custom_List.java"/>
 </file>
 </mruList>
 </workbench>

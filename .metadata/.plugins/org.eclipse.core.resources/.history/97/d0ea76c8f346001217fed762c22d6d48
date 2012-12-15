@@ -1,0 +1,14 @@
+
+public class Warunki {
+	
+	public static void main(String args[]){
+		
+		int x = 10;
+		if(x == 10){
+			System.out.println("x wynosi dokładnie dziesięć");
+		} else if (x < 10){
+			System.out.println("x jest mniejszy od dziesięciu");
+		} else System.out.println("x jest większy od dziesięciu");
+	}
+
+}

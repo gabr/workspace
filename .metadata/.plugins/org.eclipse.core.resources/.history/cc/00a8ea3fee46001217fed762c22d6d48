@@ -1,0 +1,22 @@
+public class Funkcje {
+	
+	public static void main(String args[]){
+		wypisz();
+		System.out.println("Wartosc tuńczyka wynosi: "+tunczyk());
+		System.out.println("Wartosc sumy liczb 10 i 20 wynosi: "+syma(10, 20));
+	}
+	
+	public static void wypisz(){
+		System.out.println("Ta funkcja nic nie zwraca.\n" +
+				"a ja oglądam bardzo nundy kurs.");
+	}
+	
+	public static int tunczyk(){
+		return 10;
+	}
+	
+	public static int suma(int a, int b){
+		return a+b;
+	}
+
+}

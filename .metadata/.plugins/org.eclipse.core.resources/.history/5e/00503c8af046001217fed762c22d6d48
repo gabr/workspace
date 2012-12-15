@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Skaner {
+	public static void main(String[] args){
+		
+		Scanner input = new Scanner(System.in);
+		
+		// CTRL + / aby zakomentować zaznaczone linie
+		
+//		System.out.println("Podaj imie: ");
+//		String imie = input.nextLine();
+//		System.out.println("Witaj "+imie);
+		
+//		System.out.println("Podaj twój wiek: ");
+//		int wiek = input.nextInt();
+//		System.out.println("twój wiek to: "+wiek);
+		
+		System.out.println("BMI\n");
+		System.out.println("Podaj twój wzrost w cm : ");
+		double wzrost = input.nextDouble();
+		System.out.println("Podaj twowją wagę (nie oszukuj!) w kg : ");
+		double waga = input.nextDouble();
+		
+		wzrost = wzrost / 100;	// <-- zamiana jednostki na metry
+		double bmi = waga/(Math.pow(wzrost,2));
+		
+		System.out.println("Twoje BMI wynosi: "+bmi);
+	}
+
+}

@@ -1,0 +1,17 @@
+public class Funkcje {
+	
+	public static void main(String args[]){
+		wypisz();
+		
+	}
+	
+	public static void wypisz(){
+		System.out.println("Ta funkcja nic nie zwraca.\n" +
+				"a ja oglądam bardzo nundy kurs.");
+	}
+	
+	public static int tunczyk(){
+		return 10;
+	}
+
+}

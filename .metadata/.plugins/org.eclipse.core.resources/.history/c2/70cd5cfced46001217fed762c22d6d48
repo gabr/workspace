@@ -1,0 +1,8 @@
+public class Funkcje {
+	
+	public static void wypisz(){
+		System.out.println("Ta funkcja nic nie zwraca.\n" +
+				"a ja oglądam bardzo nundy kurs.");
+	}
+
+}

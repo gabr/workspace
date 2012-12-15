@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Skaner {
+	public static void main(String[] args){
+		
+		Scanner input = new Scanner(System.in);
+		
+		// CTRL + / aby zakomentować zaznaczone linie
+		
+//		System.out.println("Podaj imie: ");
+//		String imie = input.nextLine();
+//		System.out.println("Witaj "+imie);
+		
+		
+	}
+
+}
