@@ -1,0 +1,21 @@
+public class RownanieKwadratowe {
+	
+	private int a;
+	private int b;
+	private int c;
+	
+	public RownanieKwadratowe(){
+		this(0,0,0);
+	}
+	
+	public RownanieKwadratowe(int a = 0, int b = 0, int c = 0){
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}
