@@ -1,0 +1,25 @@
+/** Program pisany na potrzeby nauki javy.
+ * 
+ */
+
+/**
+ * @author gabr
+ * @version pierwsza i jedna wersja 3.3.3
+ */
+public class Stringi {
+
+	/**Główna funkcja main
+	 * @param args
+	 * @see main
+	 */
+	public static void main(String[] args) {
+		
+		String s = "Szła dzieweczka do laseczka, szła i szła";
+		
+
+	}
+	
+	public static void cout(String s){
+		System.out.println(s);
+	}
+}

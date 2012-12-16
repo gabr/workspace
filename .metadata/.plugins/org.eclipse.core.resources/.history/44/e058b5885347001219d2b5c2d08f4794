@@ -1,0 +1,35 @@
+/** Program pisany na potrzeby nauki javy.
+ * 
+ */
+
+/**
+ * @author gabr
+ * @version pierwsza i jedna wersja 3.3.3
+ */
+public class Stringi {
+
+	/**Główna funkcja main
+	 * @param args
+	 * @see main
+	 */
+	public static void main(String[] args) {
+		
+		String s = "Szła dzieweczka do laseczka, szła i szła";
+		cout(s);
+		cout(s.substring(5));
+		System.out.println(s.indexOf("laseczka"));
+		System.out.println(s.lastIndexOf("szła"));
+		
+		String a = "kot";
+		if(a.equals("lew")) cout("a jest lwem");
+		else if(a.equals("kot")) cout("a jest kotem");
+
+	}
+	
+	/**Wypisuje podany łańcuch znaków i przechodzi do nowej lini
+	 * @param s ciąg znaków
+	 */
+	public static void cout(String s){
+		System.out.println(s);
+	}
+}

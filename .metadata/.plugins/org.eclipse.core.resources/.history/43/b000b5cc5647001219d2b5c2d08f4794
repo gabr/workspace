@@ -1,0 +1,22 @@
+/**
+ * 
+ */
+
+/**Klasa reprezentuje koło
+ * @author gabr
+ *
+ */
+public class Kolo {
+
+	/** promień koła */
+	double promien;
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

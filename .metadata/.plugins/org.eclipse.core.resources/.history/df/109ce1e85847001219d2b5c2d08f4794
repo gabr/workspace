@@ -1,0 +1,43 @@
+/**
+ * 
+ */
+
+/**Klasa reprezentuje koło
+ * @author gabr
+ *
+ */
+public class Kolo {
+
+	/** promień koła 
+	 * promień koła
+	*/
+	double promien;
+	
+	/**Liczy obwód koła na podstawie aktualnej wartości {@link #promien promienia}
+	 * @return zwraca obwód koła
+	 */
+	public double obliczObwodKola(){
+		return 2*promien*Math.PI;
+	}
+	
+	/**Liczy pole koła na podstawie aktualnej wartości promienia
+	 * @return zwraca promień koła
+	 */
+	public double obliczPoleKola(){
+		return Math.PI*Math.pow(promien, 2);
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Kolo kolo = new Kolo();
+		kolo.promien = 7.2;
+		
+		System.out.println("Obwód koła wynosi: "+Math.round(kolo.obliczObwodKola()*100)/100.0);
+		System.out.println("Pole koła wynosi: "+Math.round(kolo.obliczPoleKola()*100)/100.0);
+
+	}
+
+}

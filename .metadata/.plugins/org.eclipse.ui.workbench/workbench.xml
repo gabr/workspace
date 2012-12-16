@@ -24,6 +24,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="212" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -235,10 +236,10 @@
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.3"/>
+<view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.34398976"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.34360555"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -271,7 +272,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.1826452" ratioLeft="261" ratioRight="1168" relationship="2" relative="left"/>
 <info folder="true" part="bottom" ratio="0.78039217" ratioLeft="597" ratioRight="168" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="2">
+<folder appearance="2" expanded="0">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="LabelNotFound"/>
@@ -302,6 +303,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -318,6 +322,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kolo.java" tooltip="Lekcja 14 - klasy/src/Kolo.java">
+<persistable path="/Lekcja 14 - klasy/src/Kolo.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Petle.java" tooltip="Lekcja 10 - petle/src/Petle.java">
 <persistable path="/Lekcja 10 - petle/src/Petle.java"/>
 </file>
@@ -326,39 +333,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="main.java" tooltip="Kurs Java 2: Instalujemy eclipse/src/main.java">
 <persistable path="/Kurs Java 2: Instalujemy eclipse/src/main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ButtonsList.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="lineary_layout.xml" tooltip="PierwszaAplikacja/res/layout/lineary_layout.xml">
-<persistable path="/PierwszaAplikacja/res/layout/lineary_layout.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="PierwszaAplikacja/AndroidManifest.xml">
-<persistable path="/PierwszaAplikacja/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="buttons_custom.xml" tooltip="PierwszaAplikacja/res/drawable/buttons_custom.xml">
-<persistable path="/PierwszaAplikacja/res/drawable/buttons_custom.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="View_Listener_Click.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/View_Listener_Click.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/View_Listener_Click.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="buttons_list.xml" tooltip="PierwszaAplikacja/res/layout/buttons_list.xml">
-<persistable path="/PierwszaAplikacja/res/layout/buttons_list.xml"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Activity.class" tooltip="android.app.Activity">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=PierwszaAplikacja/\/home\/gabr\/bin\/adt-bundle-linux-x86\/sdk\/platforms\/android-4.2\/android.jar&lt;android.app(Activity.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="List_Custom_List.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/List_Custom_List.java">
-<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/List_Custom_List.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="view_listener_click.xml" tooltip="PierwszaAplikacja/res/layout/view_listener_click.xml">
-<persistable path="/PierwszaAplikacja/res/layout/view_listener_click.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="list_item_view_custom_list.xml" tooltip="PierwszaAplikacja/res/layout/list_item_view_custom_list.xml">
-<persistable path="/PierwszaAplikacja/res/layout/list_item_view_custom_list.xml"/>
 </file>
 </mruList>
 </workbench>

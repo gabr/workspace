@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**Klasa reprezentuje koło
+ * @author gabr
+ *
+ */
+public class Kolo {
+
+	/** promień koła */
+	double promien;
+	
+	/**Liczy obwód koła na podstawie aktualnej wartości promienia
+	 * @return zwraca obwód koła
+	 */
+	public double obliczObwodKola(){
+		return 2*promien*Math.PI;
+	}
+	
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
