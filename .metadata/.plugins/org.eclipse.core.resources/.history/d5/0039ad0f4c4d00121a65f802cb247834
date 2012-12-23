@@ -1,0 +1,10 @@
+
+public class TestRowniania {
+	
+	public static void main(String[] args){
+		
+		Scanner skaner = new Scanner(System.in);
+		
+	}
+
+}

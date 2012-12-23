@@ -56,8 +56,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -240,7 +238,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.342711"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3420647"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -306,7 +304,6 @@
 <trimLayout>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -321,6 +318,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestRowniania.java" tooltip="Lekcja 19 - klasa rownianie 2/src/TestRowniania.java">
+<persistable path="/Lekcja 19 - klasa rownianie 2/src/TestRowniania.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RownanieKwadratowe.java" tooltip="Lekcja 19 - klasa rownianie 2/src/RownanieKwadratowe.java">
+<persistable path="/Lekcja 19 - klasa rownianie 2/src/RownanieKwadratowe.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="RownanieKwadratowe.java" tooltip="Lekcja 18 - klasa równanie/src/RownanieKwadratowe.java">
 <persistable path="/Lekcja 18 - klasa równanie/src/RownanieKwadratowe.java"/>
 </file>
