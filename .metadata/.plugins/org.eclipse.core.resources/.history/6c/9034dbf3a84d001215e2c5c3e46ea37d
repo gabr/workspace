@@ -1,0 +1,13 @@
+
+public class Przekazywanie {
+	
+	public static void podwojenie(int x){
+		x *= 2;
+	}
+	
+	public static void main(String[] args){
+		int x = 10;
+		
+	}
+
+}

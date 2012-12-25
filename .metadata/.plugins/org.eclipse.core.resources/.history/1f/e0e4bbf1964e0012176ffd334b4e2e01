@@ -1,0 +1,27 @@
+import java.util.ArrayList;
+
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		// "kolekcja" - w tym przypadku tablica, posiada dodatkowo zmienną
+		// opisującą swoją długość
+		// <Typ> - musi to być typ obiektowy
+		// ArrayList<Typ>(rozmiar)
+		ArrayList<String> zwoj = new ArrayList<String>();
+		
+		System.out.println(zwoj);
+		zwoj.add("laska");
+		zwoj.add("tiara");
+		zwoj.add("szata");
+		zwoj.add("ksiega");
+		System.out.println(zwoj);
+		
+		System.out.println("____________");
+		System.out.println(")___________)");
+		for(String s:zwoj)
+			System.out.println("|\t"+s+"\t|");
+	}
+
+}

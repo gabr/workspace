@@ -1,0 +1,4 @@
+
+public interface Areable {
+	public double pole();
+}

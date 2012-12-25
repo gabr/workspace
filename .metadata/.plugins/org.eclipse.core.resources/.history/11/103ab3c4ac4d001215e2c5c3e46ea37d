@@ -1,0 +1,18 @@
+
+public class Czas {
+	
+	public static void main(String[] args){
+		
+		
+		// liczba milisekund od 1 stycznia 1970r
+		// System.currentTimeMillis()/(1000*3600*24*365.5)
+		System.out.println(System.currentTimeMillis());
+		
+		long t1 = System.currentTimeMillis();
+		
+		long t2 = System.currentTimeMillis();
+				
+		
+	}
+
+}

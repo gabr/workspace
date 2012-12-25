@@ -1,0 +1,19 @@
+
+public class Kolo {
+	
+	private double r;
+	
+	public Kolo(double r){
+		this.r = r;
+	}
+	
+	public Kolo(){
+		this(1);
+	}
+	
+	public static void main(String[] args){
+		
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+// klasa albstrakcyjna implementując interfejs nie musi nic robić
+// zwykłe klasy, które go inplementują lub dziedziczą a klasy implementującej
+// interfesj muszą zaimplementować metody o podanych w interfejsie nazwach
+public interface Areable {
+	public double pole();
+}
+
+// umożliwia to nieimplementowanie metod abstrakcyjnych w klasie abstrakcyjnej

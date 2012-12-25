@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		// "kolekcja" - w tym przypadku tablica, posiada dodatkowo zmienną
+		// opisującą swoją długość
+		ArrayList zwoj = new ArrayList();
+
+	}
+
+}

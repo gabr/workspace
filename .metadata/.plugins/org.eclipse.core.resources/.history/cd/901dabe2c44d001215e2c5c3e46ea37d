@@ -1,0 +1,12 @@
+
+public class TestFigura {
+	
+	public static void main(String[] args) {
+
+		Figura figa = new Figura("Fioletowa", true);
+		Kolo pileczka = new Kolo(5, "Niebieska", true);
+		Prostokat deseczka = new Prostokat(2, 5, "Brazowa", false);
+		
+	}
+
+}

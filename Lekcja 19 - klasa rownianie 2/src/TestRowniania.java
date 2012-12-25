@@ -15,6 +15,9 @@ public class TestRowniania {
 		RownanieKwadratowe r = new RownanieKwadratowe(a, b, c);
 		System.out.println(r.rozwiaz());
 		System.out.println(r);
+		
+		r.setA(0);
+		System.out.println(r+" "+r.rozwiaz());
 	}
 
 }

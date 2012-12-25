@@ -1,0 +1,31 @@
+
+public class Kolo {
+	
+	private double r;
+	
+	public Kolo(double r){
+		this.r = r;
+	}
+	
+	public Kolo(){
+		this(1);
+	}
+	
+	public double obwod(){
+		return 2*Math.PI*r;
+	}
+	
+	public double pole(){
+		return Math.PI*Math.pow(r, 2);
+	}
+	
+	public String toString(){
+		return "r = "+r;
+	}
+	
+	public static void main(String[] args){
+		
+		
+	}
+
+}

@@ -1,0 +1,35 @@
+
+public class Kolo extends Figura{
+	
+	private double r;
+	
+	public Kolo(){
+		this(1);
+	}
+	
+	public Kolo(double r){
+		this.r = r;
+	}
+	
+	public double obwod(){
+		return 2*Math.PI*r;
+	}
+	
+	public double pole(){
+		return Math.PI*Math.pow(r, 2);
+	}
+	
+	public String toString(){
+		return "Nazwa: "+getClass().getName()+"\n"
+				+"r = "+r+", obwód: "+this.obwod()+", pole: "+this.pole()
+				+super.toString();
+	}
+	
+	public static void main(String[] args){
+		
+		Kolo kulka = new Kolo(5);
+		System.out.println(kulka);
+		
+	}
+
+}

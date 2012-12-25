@@ -1,0 +1,24 @@
+
+public class Figura {
+	
+	String kolor;
+	boolean wypelnienie;
+	
+	public Figura(String k, boolean w){
+		kolor = k;
+		wypelnienie = w;
+	}
+	
+	public Figura(String k){
+		this(k, true);
+	}
+	
+	public Figura(boolean w){
+		this("Bialy", w);
+	}
+	
+	public Figura(){
+		this("Bialy", true);
+	}
+
+}

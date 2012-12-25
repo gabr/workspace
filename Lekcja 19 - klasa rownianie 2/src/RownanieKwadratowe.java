@@ -14,6 +14,18 @@ public class RownanieKwadratowe {
 		this.c = c;
 	}
 	
+	public void setA(int a){
+		this.a = a;
+	}
+	
+	public void setB(int b){
+		this.b = b;
+	}
+	
+	public void setC(int c){
+		this.c = c;
+	}
+	
 	public String rozwiaz(){
 		String rozwiazanie = "";
 		double delta;

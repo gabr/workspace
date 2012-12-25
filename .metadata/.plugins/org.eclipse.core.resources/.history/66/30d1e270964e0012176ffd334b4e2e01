@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		
+		// "kolekcja" - w tym przypadku tablica, posiada dodatkowo zmienną
+		// opisującą swoją długość
+		// <Typ> - musi to być typ obiektowy
+		// ArrayList<Typ>(rozmiar)
+		ArrayList<String> zwoj = new ArrayList<String>();
+		
+		System.out.println(zwoj);
+		zwoj.add("laska");
+		
+	}
+
+}

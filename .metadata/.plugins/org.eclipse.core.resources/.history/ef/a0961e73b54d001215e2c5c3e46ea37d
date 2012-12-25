@@ -1,0 +1,7 @@
+
+public class Figura {
+	
+	String kolor;
+	boolean wypelnienie;
+
+}

@@ -1,0 +1,18 @@
+
+public class Przekazywanie {
+	
+	public static void podwojenie(int x){
+		x *= 2;
+	}
+	
+	public static void podwojenie_tab(int[] t){
+		
+	}
+	
+	public static void main(String[] args){
+		int x = 10;
+		podwojenie(x);
+		System.out.println(x);
+	}
+
+}

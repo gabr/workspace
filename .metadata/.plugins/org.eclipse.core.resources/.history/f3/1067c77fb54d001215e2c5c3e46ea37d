@@ -1,0 +1,12 @@
+
+public class Figura {
+	
+	String kolor;
+	boolean wypelnienie;
+	
+	public Figura(String k, boolean w){
+		kolor = k;
+		wypelnienie = w;
+	}
+
+}
