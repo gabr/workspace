@@ -1,9 +1,0 @@
-package com.example.gabr.pierwszaaplikacja;
-
-import android.app.Activity;
-import android.os.Bundle;
-import android.widget.ListView;
-
-public class View_Custom_List {
-
-}
