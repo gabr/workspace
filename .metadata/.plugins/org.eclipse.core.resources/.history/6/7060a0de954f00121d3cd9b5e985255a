@@ -1,0 +1,11 @@
+public class Wyliczeniowy {
+
+	public enum DzienTygodnia {
+		Poniedzialek, Wtorek, Sroda, Czwartek, Piatek, Sobota, Niedziela
+	};
+	
+	public static void main(String[] args){
+		
+	}
+
+}

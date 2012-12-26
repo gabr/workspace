@@ -1,0 +1,12 @@
+
+public class Totek {
+	
+	public static int[] losuj(int k, int n){
+		
+	}
+	
+	public static void main(String[] args){
+		
+	}
+
+}

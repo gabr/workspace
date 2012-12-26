@@ -1,0 +1,8 @@
+
+public class Dzielenie {
+	
+	static public void main(String[] args){
+		Scanner skan = new Scanner(System.in);
+	}
+
+}

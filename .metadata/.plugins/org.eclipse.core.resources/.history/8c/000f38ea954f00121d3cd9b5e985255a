@@ -1,0 +1,13 @@
+public class Wyliczeniowy {
+
+	public enum DzienTygodnia {
+		Poniedzialek, Wtorek, Sroda, Czwartek, Piatek, Sobota, Niedziela
+	};
+
+	public static void main(String[] args) {
+		DzienTygodnia week = DzienTygodnia.Sroda;
+		for(DzienTygodnia x: DzienTygodnia.values)
+			System.out.println(x);
+	}
+
+}

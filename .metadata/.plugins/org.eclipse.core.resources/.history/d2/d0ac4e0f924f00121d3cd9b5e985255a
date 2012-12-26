@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Dzielenie {
+	
+	static public void main(String[] args){
+		Scanner skan = new Scanner(System.in);
+		
+		try {
+			
+			System.out.print("\nWprowadź licznik: ");
+			int i = skan.nextInt();
+			System.out.print("\nWprowadź mianownik: ");
+			int j = skan.nextInt();
+			
+			System.out.println("\nWynik dzielenia "+i+"/"+j+" = "+i/j);
+			
+		} catch (ArithmeticException ae) {
+			
+			ae.printStackTrace();
+			System.err.println("Dzielenie przez zero!")
+			
+		}
+		skan.close();
+	}
+
+}

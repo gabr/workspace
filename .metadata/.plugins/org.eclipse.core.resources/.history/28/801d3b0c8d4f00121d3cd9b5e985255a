@@ -1,0 +1,17 @@
+import java.util.Random;
+
+
+public class Totek {
+	
+	public static int[] losuj(int k, int n){
+		Random crazy = new Random[];
+		ArrayList<Integer> pula = new ArrayList<Integer>(n);
+		int[] wylosowane = new int[k];
+		
+	}
+	
+	public static void main(String[] args){
+		
+	}
+
+}
