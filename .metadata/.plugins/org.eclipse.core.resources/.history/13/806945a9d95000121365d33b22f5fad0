@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SilniaMala {
+
+	public static long silnia(int n) {
+		if (n == 1)
+			return 1;
+		else
+			return n * silnia(n - 1);
+	}
+
+	public static void main(String[] args) {
+		Scanner skaner = new Scanner(System.in);
+		System.out.print("Podaj dodatnia liczbe całkowitą: ");
+		System.out.println("Silnia z podanej liczby wynosi: "
+				+ silnia(skaner.nextLong()));
+		
+		
+	}
+
+}

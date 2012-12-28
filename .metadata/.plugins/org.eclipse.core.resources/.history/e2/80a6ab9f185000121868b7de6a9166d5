@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+
+public class Oceny {
+	public static void main(String[] args){
+		Scanner skaner = new Scanner(System.in);
+	}
+}

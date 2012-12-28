@@ -56,7 +56,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -303,6 +304,9 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="right"/>
 </trimArea>
@@ -319,6 +323,27 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSilnia.java" tooltip="Lekcja 35 - pakiety/src/TestSilnia.java">
+<persistable path="/Lekcja 35 - pakiety/src/TestSilnia.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Silnia.java" tooltip="Lekcja 35 - pakiety/src/org/gabr/math/Silnia.java">
+<persistable path="/Lekcja 35 - pakiety/src/org/gabr/math/Silnia.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SilniaMala.java" tooltip="Lekcja 34 - wielkie liczyb - silnia i Lotto/src/SilniaMala.java">
+<persistable path="/Lekcja 34 - wielkie liczyb - silnia i Lotto/src/SilniaMala.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BigNum.java" tooltip="Lekcja 33 - wielkie liczby/src/BigNum.java">
+<persistable path="/Lekcja 33 - wielkie liczby/src/BigNum.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Wykonywalny.java" tooltip="Lekcja 32 - wykonywalny jar/src/Wykonywalny.java">
+<persistable path="/Lekcja 32 - wykonywalny jar/src/Wykonywalny.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kolory.java" tooltip="Lekcja 31 - switch case/src/Kolory.java">
+<persistable path="/Lekcja 31 - switch case/src/Kolory.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Oceny.java" tooltip="Lekcja 31 - switch case/src/Oceny.java">
+<persistable path="/Lekcja 31 - switch case/src/Oceny.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Wyliczeniowy.java" tooltip="Lekcja 30 - enum/src/Wyliczeniowy.java">
 <persistable path="/Lekcja 30 - enum/src/Wyliczeniowy.java"/>
 </file>
@@ -342,27 +367,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kolo.java" tooltip="Lekcja 22, 23 - dziedziczenie/src/Kolo.java">
 <persistable path="/Lekcja 22, 23 - dziedziczenie/src/Kolo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kolo.java" tooltip="Lekcja 24 - polimorfizm/src/Kolo.java">
-<persistable path="/Lekcja 24 - polimorfizm/src/Kolo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Figura.java" tooltip="Lekcja 22, 23 - dziedziczenie/src/Figura.java">
-<persistable path="/Lekcja 22, 23 - dziedziczenie/src/Figura.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Figura.java" tooltip="Lekcja 24 - polimorfizm/src/Figura.java">
-<persistable path="/Lekcja 24 - polimorfizm/src/Figura.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Figura.java" tooltip="Lekcja 22 - dziedziczenie/src/Figura.java">
-<persistable path="/Lekcja 22 - dziedziczenie/src/Figura.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Prostokat.java" tooltip="Lekcja 22 - dziedziczenie/src/Prostokat.java">
-<persistable path="/Lekcja 22 - dziedziczenie/src/Prostokat.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kolo.java" tooltip="Lekcja 22 - dziedziczenie/src/Kolo.java">
-<persistable path="/Lekcja 22 - dziedziczenie/src/Kolo.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Czas.java" tooltip="Lekcja 21 - data i czas/src/Czas.java">
-<persistable path="/Lekcja 21 - data i czas/src/Czas.java"/>
 </file>
 </mruList>
 </workbench>

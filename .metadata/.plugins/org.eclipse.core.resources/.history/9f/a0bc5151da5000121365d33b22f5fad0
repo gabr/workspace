@@ -1,0 +1,24 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class SilniaMala {
+
+	public static BigInteger silnia(int n) {
+		BigInteger bn = new BigInteger("1");
+		bn = BigInteger.valueOf(n);
+		if (bn.equals(1))
+			return BigInteger.valueOf(1);
+		else
+			return bn.multiply(silnia(n-1));
+	}
+
+	public static void main(String[] args) {
+		Scanner skaner = new Scanner(System.in);
+		System.out.print("Podaj dodatnia liczbe całkowitą: ");
+		System.out.println("Silnia z podanej liczby wynosi: "
+				+ silnia(skaner.nextInt()));
+		
+		
+	}
+
+}

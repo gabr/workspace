@@ -1,0 +1,19 @@
+import java.math.BigInteger;
+import java.util.Scanner;
+
+public class SilniaMala {
+
+	public static BigInteger silnia(int n) {
+		BigInteger bn = BigInteger.valueOf(1);
+	}
+
+	public static void main(String[] args) {
+		Scanner skaner = new Scanner(System.in);
+		System.out.print("Podaj dodatnia liczbe całkowitą: ");
+		System.out.println("Silnia z podanej liczby wynosi: "
+				+ silnia(skaner.nextInt()));
+		
+		
+	}
+
+}

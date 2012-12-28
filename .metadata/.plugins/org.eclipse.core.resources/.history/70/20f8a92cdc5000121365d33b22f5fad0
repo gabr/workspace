@@ -1,0 +1,9 @@
+package org.gabr.math;
+
+public class Silnia {
+	
+	public static BigInteger silnia(int n){
+		
+	}
+
+}

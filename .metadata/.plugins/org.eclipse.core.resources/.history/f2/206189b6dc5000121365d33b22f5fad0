@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+
+public class TestSilnia {
+
+	public static void main(String[] args) {
+		Scanner skan = new Scanner(System.in);
+		System.out.print("Podaj liczbe całkowitą: ");
+		System.out.println("Silnia z podanej liczby wynosi: "+silnia(skan.nextInt()));
+
+	}
+
+}

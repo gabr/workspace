@@ -1,0 +1,10 @@
+import static org.gabr.math.Silnia.silnia;
+
+
+public class TestSilnia {
+
+	public static void main(String[] args) {
+
+	}
+
+}

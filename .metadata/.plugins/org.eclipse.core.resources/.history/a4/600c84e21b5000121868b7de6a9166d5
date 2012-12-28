@@ -1,0 +1,6 @@
+
+public class Wykonywalny {
+	public static void main(String[] args){
+		System.out.println("Plik wykonywalny java.\n");
+	}
+}

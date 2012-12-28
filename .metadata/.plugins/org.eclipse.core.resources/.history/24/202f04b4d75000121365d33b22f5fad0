@@ -1,0 +1,9 @@
+
+public class BigNum {
+	
+	public static void main(String[] args){
+		int i = (int)1e9;
+		long i = (long)1e18;
+	}
+
+}

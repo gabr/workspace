@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class Oceny {
+	public static void main(String[] args){
+		Scanner skaner = new Scanner(System.in);
+		
+		int ocena;
+		int jedynki, dwojki, trojki, czworki, piatki, szostki, inne;
+		jedynki = dwojki = trojki = czworki = piatki = szostki = inne = 0;
+		
+		System.out.println("Wprowadz oceny. \"q\" kończy wprowadzanie: ");
+		while(skaner.hasNextInt()){
+			ocena = skaner.nextInt();
+			switch(ocena){
+			case 1: jedynki++; break;
+			case 2: dwojki++; break;
+			case 3: trojki++; break;
+			case 4: czworki++; break;
+			case 5: piatki++; break;
+			case 6: szostki++; break;
+			default: inne++; break;			
+			}			
+		}
+		
+		System.out.println("Jedynki: "+jedynki);
+		System.out.println("Dwojki: "+dwojki);
+		System.out.pri
+	}
+}

@@ -1,0 +1,21 @@
+
+public class Kolory {
+
+	public static void main(String[] args){
+		String kolor = "ZIELONY";
+		
+		switch(kolor){
+		case "CZERWONY":
+			System.out.println("Kolor czerwony!");
+			break;
+		case "NIEBIESKI":
+			System.out.println("Kolor niebieski!");
+			break;
+		case "ZIELONY":
+			System.out.println("Kolor zielony!");
+			break;
+		default:
+			System.out.println("Inny kolor!")
+		}
+	}
+}

@@ -1,0 +1,11 @@
+
+public class BigNum {
+	
+	public static void main(String[] args){
+		int i = (int)1e9;
+		long l = (long)1e18;
+		l = 1000000000000000000L;
+		double d = 1e308;
+	}
+
+}
