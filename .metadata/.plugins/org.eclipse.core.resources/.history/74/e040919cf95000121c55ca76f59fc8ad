@@ -1,0 +1,5 @@
+CTRL+SHIFT+o - automatyczne dodawanie importów
+CTRL+SPACE - autouzupełnianie (insert - przemieszczenie się pomiędzy parametrami)
+ALT+SHIFT+j - autodokumentacja obiektu na którym mamy kursor
+CTRL+/ - komentowanie zaznaczonego kodu komentarzem liniowym
+CTRL+SHIFT+f - poprawa wizualnej budowy kodu, automatyczne formatowanie kodu
