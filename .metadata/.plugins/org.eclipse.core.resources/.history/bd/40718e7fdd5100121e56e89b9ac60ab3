@@ -84,9 +84,7 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 		} else if (zrodlo == cbDuze) {
 			if (cbDuze.isSelected()) {
 				tFah.setFont(new Font("SansSerif", Font.BOLD, 13));
-				tCel.setFont(new Font("SansSerif", Font.BOLD, 13));
 			} else {
-				tCel.setFont(fontFah);
 				tFah.setFont(fontFah);
 			}
 		}

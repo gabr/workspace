@@ -19,7 +19,6 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 	private double tempCel;
 	private double tempFah;
 	private JCheckBox cbDuze;
-	private Font fontFah;
 
 	public CelsiusToFahrenheit() {
 
@@ -35,7 +34,6 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 
 		tCel = new JTextField("");
 		tCel.setBounds(225, 25, 80, 25);
-		tCel.addActionListener(this);
 		add(tCel);
 
 		lFah = new JLabel("Fahrenheit: ");
@@ -46,13 +44,12 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 		tFah.setBounds(225, 60, 80, 25);
 		tFah.setFocusable(false);
 		add(tFah);
-		fontFah = tFah.getFont();
 
 		bKonwert = new JButton("Konwertuj");
 		bKonwert.setBounds(25, 115, 120, 25);
 		bKonwert.addActionListener(this);
 		add(bKonwert);
-
+		
 		cbDuze = new JCheckBox("Wielkie litery");
 		cbDuze.setBounds(200, 115, 120, 25);
 		cbDuze.addActionListener(this);
@@ -65,29 +62,28 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 		okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		okno.setVisible(true);
 	}
-
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-
+		
 		Object zrodlo = e.getSource();
-
-		if (zrodlo == bKonwert || zrodlo == tCel) {
+		
+		if(zrodlo == bKonwert){
 			try {
 				tempCel = Double.parseDouble(tCel.getText());
-				tempFah = 32.0 + (9.0 / 5.0) * tempCel;
-				tempFah = (Math.round(tempFah * 100)) / 100.0;
+				tempFah = 32.0 + (9.0/5.0) * tempCel;
+				tempFah = (Math.round(tempFah*100))/100.0;
 				tFah.setText(String.valueOf(tempFah));
-
+				
 			} catch (NumberFormatException e1) {
 				tCel.setText("Podaj liczbę");
 			}
-		} else if (zrodlo == cbDuze) {
-			if (cbDuze.isSelected()) {
+		}
+		else if(zrodlo == cbDuze){
+			if(cbDuze.isSelected()){
 				tFah.setFont(new Font("SansSerif", Font.BOLD, 13));
-				tCel.setFont(new Font("SansSerif", Font.BOLD, 13));
 			} else {
-				tCel.setFont(fontFah);
-				tFah.setFont(fontFah);
+				
 			}
 		}
 	}

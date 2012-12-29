@@ -86,7 +86,6 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 				tFah.setFont(new Font("SansSerif", Font.BOLD, 13));
 				tCel.setFont(new Font("SansSerif", Font.BOLD, 13));
 			} else {
-				tCel.setFont(fontFah);
 				tFah.setFont(fontFah);
 			}
 		}

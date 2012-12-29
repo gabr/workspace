@@ -19,7 +19,6 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 	private double tempCel;
 	private double tempFah;
 	private JCheckBox cbDuze;
-	private Font fontFah;
 
 	public CelsiusToFahrenheit() {
 
@@ -35,7 +34,6 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 
 		tCel = new JTextField("");
 		tCel.setBounds(225, 25, 80, 25);
-		tCel.addActionListener(this);
 		add(tCel);
 
 		lFah = new JLabel("Fahrenheit: ");
@@ -71,7 +69,7 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 
 		Object zrodlo = e.getSource();
 
-		if (zrodlo == bKonwert || zrodlo == tCel) {
+		if (zrodlo == bKonwert) {
 			try {
 				tempCel = Double.parseDouble(tCel.getText());
 				tempFah = 32.0 + (9.0 / 5.0) * tempCel;
@@ -84,10 +82,8 @@ public class CelsiusToFahrenheit extends JFrame implements ActionListener {
 		} else if (zrodlo == cbDuze) {
 			if (cbDuze.isSelected()) {
 				tFah.setFont(new Font("SansSerif", Font.BOLD, 13));
-				tCel.setFont(new Font("SansSerif", Font.BOLD, 13));
 			} else {
-				tCel.setFont(fontFah);
-				tFah.setFont(fontFah);
+				tFah.setFont(new Font("SansSerif", Font.PLAIN, 11));
 			}
 		}
 	}
