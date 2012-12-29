@@ -1,0 +1,21 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Okno extends JFrame {
+
+	public Okno() {
+		setSize(300, 200);
+		setTitle("okno");
+		setLayout(null);
+		JButton button = new JButton("Podaj datę");
+		button.setBounds(5, 5, 50, 20);
+		add(button);
+	}
+
+	public static void main(String[] args) {
+		Okno okienko = new Okno();
+		okienko.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okienko.setVisible(true);
+	}
+
+}

@@ -1,0 +1,18 @@
+import javax.swing.JFrame;
+
+
+public class CelsiusToFahrenheit extends JFrame{
+	
+	public CelsiusToFahrenheit()
+	{
+		setSize(300, 200);
+		setTitle("Celsius --> Fahrenheit");
+		setLayout(null);
+	}
+	
+	public static void main(String[] args){
+		CelsiusToFahrenheit okno = new CelsiusToFahrenheit();
+		
+	}
+
+}

@@ -1,0 +1,49 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+public class CelsiusToFahrenheit extends JFrame {
+
+	private JLabel lCel;
+	private JLabel lFah;
+	private JTextField tCel;
+	private JTextField tFah;
+	private JButton bKonwert;
+	
+	
+	public CelsiusToFahrenheit() {
+		setSize(400, 200);
+		setTitle("Celsius --> Fahrenheit");
+		setLayout(null);
+		
+		lCel = new JLabel("Stopnie Celsiusza:");
+		lCel.setBounds(25, 25, 175, 25);
+		add(lCel);
+		
+		tCel = new JTextField("");
+		tCel.setBounds(225, 25, 80, 25);
+		add(tCel);
+		
+		lFah = new JLabel("Fahrenheit: ");
+		lFah.setBounds(25, 60, 175, 25);
+		add(lFah);
+		
+		tFah = new JTextField("");
+		tFah.setBounds(225, 60, 80, 25);
+		tFah.setFocusable(false);
+		add(tFah);
+		
+		bKonwert = new JButton("Konwertuj");
+		bKonwert.setBounds(25, 90, 50, 25);
+		add(bKonwert);
+		
+	}
+
+	public static void main(String[] args) {
+		CelsiusToFahrenheit okno = new CelsiusToFahrenheit();
+		okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okno.setVisible(true);
+	}
+
+}

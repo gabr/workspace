@@ -1,0 +1,51 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.Date;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class Okno extends JFrame implements ActionListener {
+
+	private JButton bPodajDate;
+	private JButton bWyjscie;
+
+	public Okno() {
+		setSize(300, 200);
+		setTitle("okno");
+
+		setLayout(null);
+
+		bPodajDate = new JButton("Podaj datę");
+		bPodajDate.setBounds(5, 5, 125, 30);
+		bPodajDate.addActionListener(this);
+		add(bPodajDate);
+
+		bWyjscie = new JButton("Wyjście");
+		bWyjscie.setBounds(180, 50, 100, 25);
+		add(bWyjscie);
+		bWyjscie.addActionListener(this);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+
+		Object zrodlo = arg0.getSource();
+
+		switch(zrodlo){
+		case bPodajDate: 	System.out.println(new Date());
+							bPodajDate.setBounds(5, 5, 250, 30);
+							bPodajDate.setText("Data podana w konsoli");
+							break;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Okno okienko = new Okno();
+		okienko.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okienko.setVisible(true);
+	}
+
+}

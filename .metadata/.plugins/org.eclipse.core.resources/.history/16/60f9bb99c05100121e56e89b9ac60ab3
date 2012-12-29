@@ -1,0 +1,8 @@
+
+public class MojeOkienko extends JFrame{
+	
+	public static void main(String[] args){
+		
+	}
+
+}
