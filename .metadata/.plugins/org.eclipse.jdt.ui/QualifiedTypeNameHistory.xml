@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="com.example.gabr.pierwszaaplikacja.R.id"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="RownanieKwadratowe"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.Calendar"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
 <fullyQualifiedTypeName name="Kolo"/>
@@ -31,4 +30,9 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.math.BigInteger"/>
 <fullyQualifiedTypeName name="org.gabr.math.Silnia"/>
+<fullyQualifiedTypeName name="MojeOkienko"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="CelsiusToFahrenheit"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.JRadioButton"/>
 </qualifiedTypeNameHistroy>
