@@ -1,0 +1,65 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class Menu extends JFrame implements ActionListener{
+
+	JMenuBar menuBar;
+	JMenu menuPlik, menuNarzedzia, menuPomoc;
+	JMenuItem menuPlikOtworz, menuPlikZapisz, menuPlikWyjscie;
+	JMenuItem menuNarzedzia1, menuNarzedzia2;
+	JMenuItem menuPomocOProgramie;
+	
+	public Menu(){
+		setSize(400, 100);
+		setTitle("Menu");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		menuBar = new JMenuBar();
+		menuPlik = new JMenu("Plik");
+		menuNarzedzia = new JMenu("Narzedzia");
+		menuPomoc = new JMenu("Pomoc");
+		
+		menuBar.add(menuPlik);
+		menuBar.add(menuNarzedzia);
+		menuBar.add(menuPomoc);
+		
+		menuPlikOtworz = new JMenuItem("Otworz");
+		menuPlikZapisz = new JMenuItem("Zapisz");
+		menuPlikWyjscie = new JMenuItem("Wyjscie");
+		menuPlikWyjscie.addActionListener(this);
+		menuPlik.add(menuPlikOtworz);
+		menuPlik.add(menuPlikZapisz);
+		menuPlik.addSeparator();
+		menuPlik.add(menuPlikWyjscie);
+		
+		menuNarzedzia1 = new JMenuItem("narzedzie 1");
+		menuNarzedzia2 = new JMenuItem("narzedzie 2");
+		menuNarzedzia.add(menuNarzedzia1);
+		menuNarzedzia.add(menuNarzedzia2);
+		
+		menuPomocOProgramie = new JMenuItem("O programie");
+		menuPomoc.add(menuPomocOProgramie);
+		
+		setJMenuBar(menuBar);
+		
+		
+	}
+	
+	public static void main(String[] args){
+		Menu app = new Menu();
+		app.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e){
+		Object s = e.getSource();
+		if(s == menuPlikWyjscie) dispose();
+	}
+
+}

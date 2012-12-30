@@ -1,0 +1,16 @@
+import javax.swing.JFrame;
+import org.gabr.math.RownanieKwadratowe;
+
+public class RownanieGUI extends JFrame {
+	
+	public RownanieGUI(){
+		setSize(400, 400);
+		setTitle("Równanie kwadratowe");
+		setLayout(null);
+	}
+	
+	public static void main(String[] args){
+		
+	}
+
+}

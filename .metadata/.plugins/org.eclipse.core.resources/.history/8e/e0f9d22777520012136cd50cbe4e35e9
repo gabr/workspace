@@ -1,0 +1,54 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+
+public class Menu extends JFrame implements ActionListener{
+
+	JMenuBar menuBar;
+	JMenu menuPlik, menuNarzedzia, menuPomoc;
+	JMenuItem menuPlikOtworz, menuPlikZapisz, menuPlikWyjscie;
+	JMenuItem menuNarzedziaItem1, menuNarzedzia2;
+	JMenuItem menuPomocOProgramie;
+	
+	public Menu(){
+		setSize(400, 100);
+		setTitle("Menu");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		menuBar = new JMenuBar();
+		menuPlik = new JMenu("Plik");
+		menuNarzedzia = new JMenu("Narzedzia");
+		menuPomoc = new JMenu("Pomoc");
+		
+		menuBar.add(menuPlik);
+		menuBar.add(menuNarzedzia);
+		menuBar.add(menuPomoc);
+		
+		menuPlikOtworz = new JMenuItem("Otworz");
+		menuPlikZapisz = new JMenuItem("Zapisz");
+		menuPlikWyjscie = new JMenuItem("Wyjscie");
+		menuPlik.add(menuPlikOtworz);
+		menuPlik.add(menuPlikZapisz);
+		menuPlik.add(menuPlikWyjscie);
+		
+		setJMenuBar(menuBar);
+		
+		
+	}
+	
+	public static void main(String[] args){
+		Menu app = new Menu();
+		app.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent e){
+		
+	}
+
+}

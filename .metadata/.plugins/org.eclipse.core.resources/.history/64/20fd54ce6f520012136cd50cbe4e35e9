@@ -1,0 +1,24 @@
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import org.gabr.math.RownanieKwadratowe;
+
+public class RownanieGUI extends JFrame {
+	
+	private JTextField ta, tb, tc, tWynik;
+	
+	public RownanieGUI(){
+		setSize(400, 400);
+		setTitle("Równanie kwadratowe");
+		setLayout(null);
+	}
+	
+	public static void main(String[] args){
+		RownanieGUI okno = new RownanieGUI();
+		okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okno.setVisible(true);
+		
+		RownanieKwadratowe dzialanie = new RownanieKwadratowe();
+	}
+
+}

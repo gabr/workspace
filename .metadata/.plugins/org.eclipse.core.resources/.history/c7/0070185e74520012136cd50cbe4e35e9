@@ -1,0 +1,83 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import org.gabr.math.RownanieKwadratowe;
+
+public class RownanieGUI extends JFrame implements ActionListener {
+
+	private JTextField ta, tb, tc, tWynik;
+	private JButton bRozwiaz, bWyjscie;
+	private JLabel la, lb, lc;
+
+	public RownanieGUI() {
+		setSize(310, 185);
+		setTitle("Równanie kwadratowe");
+		setLayout(null);
+
+		la = new JLabel("f(x) = ", JLabel.RIGHT);
+		la.setBounds(20, 20, 40, 25);
+		ta = new JTextField("a");
+		ta.setBounds(63, 23, 50, 20);
+		ta.setToolTipText("Podaj parametr a");
+		ta.setHorizontalAlignment(JTextField.CENTER);
+		add(la);
+		add(ta);
+
+		lb = new JLabel(" * x^2 + ", JLabel.RIGHT);
+		lb.setBounds(105, 20, 60, 25);
+		tb = new JTextField("b");
+		tb.setBounds(165, 23, 50, 20);
+		tb.setToolTipText("Podaj paremetr b");
+		tb.setHorizontalAlignment(JTextField.CENTER);
+		add(lb);
+		add(tb);
+
+		lc = new JLabel(" * x + ", JLabel.RIGHT);
+		lc.setBounds(210, 20, 40, 25);
+		tc = new JTextField("c");
+		tc.setBounds(250, 23, 50, 20);
+		tc.setToolTipText("Podaj parametr c");
+		tc.setHorizontalAlignment(JTextField.CENTER);
+		add(lc);
+		add(tc);
+
+		bWyjscie = new JButton("WYJŚCIE");
+		bWyjscie.setBounds(205, 135, 100, 25);
+		bWyjscie.addActionListener(this);
+		add(bWyjscie);
+
+		bRozwiaz = new JButton("Rozwiaż");
+		bRozwiaz.setBounds(20, 50, 100, 25);
+		bRozwiaz.addActionListener(this);
+		add(bRozwiaz);
+
+		tWynik = new JTextField("x1 = ? and x2 = ?");
+		tWynik.setHorizontalAlignment(JTextField.CENTER);
+		tWynik.setBounds(20, 85, 150, 75);
+		add(tWynik);
+
+	}
+
+	public static void main(String[] args) {
+		RownanieGUI okno = new RownanieGUI();
+		okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okno.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		Object s = e.getSource();
+		
+		if(s == bWyjscie) dispose();
+		else if(s == bRozwiaz){
+			RownanieKwadratowe dzialanie new RownanieKwadratowe();
+		}
+		
+	}
+
+}

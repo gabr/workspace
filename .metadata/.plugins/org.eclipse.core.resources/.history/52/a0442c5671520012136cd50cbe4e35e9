@@ -1,0 +1,46 @@
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+import org.gabr.math.RownanieKwadratowe;
+
+public class RownanieGUI extends JFrame {
+	
+	private JTextField ta, tb, tc, tWynik;
+	private JButton bRozwiaz, bWyjscie;
+	private JLabel la, lb, lc, lWynik;
+	
+	public RownanieGUI(){
+		setSize(400, 400);
+		setTitle("Równanie kwadratowe");
+		setLayout(null);
+		
+		la = new JLabel("f(x) = ", JLabel.RIGHT);
+		la.setBounds(20, 20, 40, 25);
+		ta = new JTextField("a");
+		ta.setBounds(63, 23, 20, 20);
+		add(la);
+		add(ta);
+		
+		lb = new JLabel("* x^2 + ", JLabel.RIGHT);
+		lb.setBounds(75, 20, 60, 25);
+		tb = new JTextField("b");
+		tb.setBounds(135, 23, 20, 20);
+		add(lb);
+		add(tb);
+		
+		lc = new JLabel("* x + ", JLabel.RIGHT);
+		lc.setBounds(150, 20, 40, 25);
+		add(lc);
+	}
+	
+	public static void main(String[] args){
+		RownanieGUI okno = new RownanieGUI();
+		okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		okno.setVisible(true);
+		
+		RownanieKwadratowe dzialanie = new RownanieKwadratowe();
+	}
+
+}
