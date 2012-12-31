@@ -57,8 +57,7 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -95,6 +94,9 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control"/>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
@@ -243,6 +245,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29923275"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -327,6 +330,12 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelToFahSuwak.java" tooltip="A test/src/CelToFahSuwak.java">
+<persistable path="/A test/src/CelToFahSuwak.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelToFahSuwak.java" tooltip="A TEST/src/CelToFahSuwak.java">
+<persistable path="/A TEST/src/CelToFahSuwak.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelToFahSuwak.java" tooltip="GUI 27 - JSlider/src/CelToFahSuwak.java">
 <persistable path="/GUI 27 - JSlider/src/CelToFahSuwak.java"/>
 </file>
@@ -365,12 +374,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java">
 <persistable path="/GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 9 - JCheckBox bez ActionListener&apos;a/src/CelsiusToFahrenheit.java">
-<persistable path="/GUI 9 - JCheckBox bez ActionListener&apos;a/src/CelsiusToFahrenheit.java"/>
-</file>
-<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JTextField.class" tooltip="javax.swing.JTextField">
-<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=GUI 8 - JRadioButton/\/usr\/lib\/jvm\/java-6-openjdk\/jre\/lib\/rt.jar&lt;javax.swing(JTextField.class"/>
 </file>
 </mruList>
 </workbench>
