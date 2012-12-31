@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="8" version="2.0">
 <workbenchAdvisor/>
-<window height="884" maximized="true" width="1072" x="1680" y="621">
+<window height="900" maximized="true" width="1440" x="1680" y="621">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
-<itemSize x="250"/>
+<itemSize x="214"/>
 </perspectiveBar>
 <coolbarLayout>
 <coolItem id="group.file" itemType="typeGroupMarker"/>
@@ -13,9 +13,14 @@
 <coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="adt.actionSet.lint" itemType="typeToolBarContribution" x="54" y="26"/>
 <coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="36" y="26"/>
+<coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="142" y="26"/>
-<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="80" y="26"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="106" y="26"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="80" y="26"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -24,15 +29,10 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="212" y="26"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="com.android.ide.eclipse.editors.CommonXmlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1355045894087" focus="true" label="Workspace - android-gabr">
+<page aggregateWorkingSetId="Aggregate for window 1355045894087" focus="true" label="Workspace - java-gabr">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -68,9 +68,6 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -108,7 +105,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="android-gabr">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="java-gabr">
 <perspective editorAreaTrimState="2" editorAreaVisible="0" fixed="0" version="0.016">
 <descriptor class="com.android.ide.eclipse.ddms.Perspective" id="com.android.ide.eclipse.ddms.Perspective" label="DDMS"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -175,7 +172,7 @@
 </layout>
 </perspective>
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
-<descriptor descriptor="org.eclipse.jdt.ui.JavaPerspective" id="android-gabr" label="android-gabr"/>
+<descriptor descriptor="org.eclipse.jdt.ui.JavaPerspective" id="java-gabr" label="java-gabr"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
 <alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
 <alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
@@ -195,44 +192,49 @@
 <alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
 <alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
-<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
-<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
-<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
 <show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
 <show_view_action id="org.eclipse.search.ui.views.SearchView"/>
 <show_view_action id="org.eclipse.ui.console.ConsoleView"/>
-<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
-<show_view_action id="org.eclipse.ui.views.ProblemView"/>
-<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
-<show_view_action id="org.eclipse.ui.views.TaskList"/>
-<show_view_action id="org.eclipse.ui.views.ProgressView"/>
 <show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
 <show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
-<show_view_action id="org.eclipse.pde.runtime.LogView"/>
-<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<new_wizard_action id="com.android.ide.eclipse.adt.project.NewProjectWizard"/>
+<new_wizard_action id="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
-<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
-<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
 <new_wizard_action id="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
 <new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
 <new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
-<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
-<new_wizard_action id="com.android.ide.eclipse.adt.project.NewProjectWizard"/>
-<new_wizard_action id="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard"/>
-<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
-<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
-<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
-<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
-<perspective_action id="com.android.ide.eclipse.hierarchyviewer.PixelPerfectPespective"/>
-<perspective_action id="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.RunToLine"/>
-<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
-<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.ui.navigate.opentype"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.StepInto"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.Terminate"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.StepReturn"/>
+<hide_toolbar_item_id id="org.eclipse.ant.ui.toggleMarkOccurrences"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.Disconnect"/>
+<hide_toolbar_item_id id="org.eclipse.cdt.ui.edit.text.c.toggleMarkOccurrences"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.ToggleStepFilters"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.StepOver"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.Suspend"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.Resume"/>
+<hide_toolbar_item_id id="org.eclipse.ant.ui.toggleAutoReconcile"/>
+<hide_toolbar_item_id id="org.eclipse.debug.internal.ui.actions.ProfileDropDownAction"/>
+<hide_toolbar_item_id id="org.eclipse.debug.ui.commands.DropToFrame"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
@@ -241,7 +243,6 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3414322"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -253,15 +254,12 @@
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@57240e" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">
@@ -272,8 +270,15 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.1826452" ratioLeft="261" ratioRight="1168" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.78039217" ratioLeft="597" ratioRight="168" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@d07588" ratio="0.1826452" ratioLeft="261" ratioRight="1168" relationship="2" relative="left">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottom" ratio="0.78039217" ratioLeft="597" ratioRight="168" relationship="4" relative="org.eclipse.ui.internal.ViewStack@d07588">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
@@ -286,7 +291,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="right" ratio="0.74934036" ratioLeft="568" ratioRight="190" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d07588">
 <folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
@@ -294,6 +299,7 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="350" ratioRight="1050" relationship="2" relative="org.eclipse.ui.internal.ViewStack@d07588"/>
 </mainWindow>
 </layout>
 </perspective>
@@ -321,6 +327,42 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelToFahSuwak.java" tooltip="GUI 27 - JSlider/src/CelToFahSuwak.java">
+<persistable path="/GUI 27 - JSlider/src/CelToFahSuwak.java"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JScrollPane.class" tooltip="javax.swing.JScrollPane">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=GUI 24 - jDialog/\/usr\/lib\/jvm\/java-6-openjdk\/jre\/lib\/rt.jar&lt;javax.swing(JScrollPane.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="App.java" tooltip="GUI 24 - jDialog/src/App.java">
+<persistable path="/GUI 24 - jDialog/src/App.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pass.java" tooltip="GUI 23 - JPasswordField/src/Pass.java">
+<persistable path="/GUI 23 - JPasswordField/src/Pass.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 22 - JColorChooser/src/Menu.java">
+<persistable path="/GUI 22 - JColorChooser/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 21 - JComboBox/src/Menu.java">
+<persistable path="/GUI 21 - JComboBox/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 20 - JPopupMenu/src/Menu.java">
+<persistable path="/GUI 20 - JPopupMenu/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 18 - JTextArea - zapis i odczyt z pliku/src/Menu.java">
+<persistable path="/GUI 18 - JTextArea - zapis i odczyt z pliku/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 17 - JFileChooser/src/Menu.java">
+<persistable path="/GUI 17 - JFileChooser/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 16 - JOptionPane/src/Menu.java">
+<persistable path="/GUI 16 - JOptionPane/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 13 - Menu/src/Menu.java">
+<persistable path="/GUI 13 - Menu/src/Menu.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionPanel.java" tooltip="GUI 16 - JOptionPane/src/OptionPanel.java">
+<persistable path="/GUI 16 - JOptionPane/src/OptionPanel.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java">
 <persistable path="/GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java"/>
 </file>
@@ -329,42 +371,6 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="JTextField.class" tooltip="javax.swing.JTextField">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=GUI 8 - JRadioButton/\/usr\/lib\/jvm\/java-6-openjdk\/jre\/lib\/rt.jar&lt;javax.swing(JTextField.class"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 8 - JRadioButton/src/CelsiusToFahrenheit.java">
-<persistable path="/GUI 8 - JRadioButton/src/CelsiusToFahrenheit.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 7 - JCheckBox/src/CelsiusToFahrenheit.java">
-<persistable path="/GUI 7 - JCheckBox/src/CelsiusToFahrenheit.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Okno.java" tooltip="GUI 4 - JLabel/src/Okno.java">
-<persistable path="/GUI 4 - JLabel/src/Okno.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 5 - JTextField/src/CelsiusToFahrenheit.java">
-<persistable path="/GUI 5 - JTextField/src/CelsiusToFahrenheit.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Okno.java" tooltip="GUI 2 - JButton/src/Okno.java">
-<persistable path="/GUI 2 - JButton/src/Okno.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="help.txt" tooltip="Lekcja 37 - eclipse praktyczne porady/help.txt">
-<persistable path="/Lekcja 37 - eclipse praktyczne porady/help.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MojeOkienko.java" tooltip="GUI 1 - JFrame/src/MojeOkienko.java">
-<persistable path="/GUI 1 - JFrame/src/MojeOkienko.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TestSilnia.java" tooltip="Lekcja 35 - pakiety/src/TestSilnia.java">
-<persistable path="/Lekcja 35 - pakiety/src/TestSilnia.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Silnia.java" tooltip="Lekcja 35 - pakiety/src/org/gabr/math/Silnia.java">
-<persistable path="/Lekcja 35 - pakiety/src/org/gabr/math/Silnia.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SilniaMala.java" tooltip="Lekcja 34 - wielkie liczyb - silnia i Lotto/src/SilniaMala.java">
-<persistable path="/Lekcja 34 - wielkie liczyb - silnia i Lotto/src/SilniaMala.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BigNum.java" tooltip="Lekcja 33 - wielkie liczby/src/BigNum.java">
-<persistable path="/Lekcja 33 - wielkie liczby/src/BigNum.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Wykonywalny.java" tooltip="Lekcja 32 - wykonywalny jar/src/Wykonywalny.java">
-<persistable path="/Lekcja 32 - wykonywalny jar/src/Wykonywalny.java"/>
 </file>
 </mruList>
 </workbench>

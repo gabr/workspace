@@ -1,0 +1,241 @@
+import java.awt.HeadlessException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JCheckBoxMenuItem;
+import javax.swing.JFileChooser;
+import javax.swing.JFrame;
+import javax.swing.JMenu;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
+import javax.swing.JPopupMenu;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import javax.swing.KeyStroke;
+import javax.swing.UIManager;
+
+public class Menu extends JFrame implements ActionListener
+{
+
+	private static final long serialVersionUID = 1L;
+	private JMenuBar menuBar;
+	private JMenu menuPlik, menuOpcje, menuNarzedzia, menuPomoc;
+	private JMenuItem menuPlikOtworz, menuPlikZapisz, menuPlikWyjscie;
+	private JMenuItem menuOpcjeOpcja1, menuOpcjeOpcja2;
+	private JMenuItem menuNarzedzia1, menuNarzedzia2;
+	private JMenuItem menuPomocOProgramie;
+	private JCheckBoxMenuItem checkBoxMenuOpcjeOpcja3;
+	private JTextArea notatnik;
+	private JButton bSzukaj;
+	private JTextField tSzukany;
+	private JPopupMenu popup;
+	private JMenuItem mpKopiuj, mpWklej, mpDolacz;
+	private String wybranyTekst;
+
+	public Menu()
+	{
+		setSize(400, 600);
+		setTitle("Menu");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+
+		menuBar = new JMenuBar();
+		menuPlik = new JMenu("Plik");
+		menuNarzedzia = new JMenu("Narzedzia");
+		menuPomoc = new JMenu("Pomoc");
+
+		menuPlikOtworz = new JMenuItem("Otworz", 'O');
+		menuPlikOtworz.addActionListener(this);
+		menuPlikZapisz = new JMenuItem("Zapisz", 'Z');
+		menuPlikZapisz.addActionListener(this);
+		menuPlikWyjscie = new JMenuItem("Wyjscie", 'W');
+		menuPlikWyjscie.addActionListener(this);
+		menuPlikWyjscie.setAccelerator(KeyStroke.getKeyStroke("ctrl Q"));
+		menuPlik.add(menuPlikOtworz);
+		menuPlik.add(menuPlikZapisz);
+		menuPlik.addSeparator();
+		menuPlik.add(menuPlikWyjscie);
+
+		menuNarzedzia1 = new JMenuItem("metry --> stopy", 'm');
+		menuNarzedzia1.addActionListener(this);
+		menuNarzedzia2 = new JMenuItem("narzedzie 2", 'a');
+
+		menuOpcje = new JMenu("Opcje");
+		menuOpcjeOpcja1 = new JMenuItem("opcja 1", 'p');
+		menuOpcjeOpcja2 = new JMenuItem("opcja 2", 'c');
+		checkBoxMenuOpcjeOpcja3 = new JCheckBoxMenuItem("opcja 3", true);
+		checkBoxMenuOpcjeOpcja3.addActionListener(this);
+		menuOpcje.add(menuOpcjeOpcja1);
+		menuOpcje.add(menuOpcjeOpcja2);
+		menuOpcje.add(checkBoxMenuOpcjeOpcja3);
+
+		menuNarzedzia.add(menuNarzedzia1);
+		menuNarzedzia.add(menuNarzedzia2);
+		menuNarzedzia.add(menuOpcje);
+
+		menuPomocOProgramie = new JMenuItem("O programie", 'r');
+		menuPomocOProgramie.addActionListener(this);
+		menuPomoc.add(menuPomocOProgramie);
+
+		menuBar.add(menuPlik);
+		menuBar.add(menuNarzedzia);
+		menuBar.add(Box.createHorizontalGlue());
+		menuBar.add(menuPomoc);
+
+		setJMenuBar(menuBar);
+
+		notatnik = new JTextArea();
+		JScrollPane scrollPane = new JScrollPane(notatnik);
+		scrollPane.setBounds(50, 50, 300, 400);
+		add(scrollPane);
+
+		tSzukany = new JTextField();
+		tSzukany.setBounds(50, 500, 100, 20);
+		add(tSzukany);
+
+		bSzukaj = new JButton("Szukaj");
+		bSzukaj.setBounds(250, 500, 100, 20);
+		bSzukaj.addActionListener(this);
+		add(bSzukaj);
+
+		popup = new JPopupMenu();
+		mpKopiuj = new JMenuItem("Kopiuj");
+		mpKopiuj.addActionListener(this);
+		mpWklej = new JMenuItem("Wklej");
+		mpWklej.addActionListener(this);
+		mpDolacz = new JMenuItem("Dolacz");
+		mpDolacz.addActionListener(this);
+		popup.add(mpKopiuj);
+		popup.add(mpWklej);
+		popup.add(mpDolacz);
+		notatnik.setComponentPopupMenu(popup);
+		
+	}
+
+	public static void main(String[] args)
+	{
+		Menu app = new Menu();
+		app.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e)
+	{
+		Object s = e.getSource();
+		if (s == menuPlikWyjscie)
+		{
+			int odp = JOptionPane.showConfirmDialog(null,
+					"Czy na pewno zakończyć?", "Wyjscie",
+					JOptionPane.YES_NO_OPTION);
+			if (odp == JOptionPane.YES_OPTION)
+				dispose();
+			else if (odp == JOptionPane.NO_OPTION)
+				JOptionPane.showMessageDialog(null, "Wiedziałem ;)");
+			else if (odp == JOptionPane.CLOSED_OPTION)
+				JOptionPane.showMessageDialog(null, "Tak nie robimy ;\\",
+						"COO TO", JOptionPane.ERROR_MESSAGE);
+		} else if (s == checkBoxMenuOpcjeOpcja3)
+			if (checkBoxMenuOpcjeOpcja3.isSelected())
+				menuNarzedzia2.setEnabled(true);
+			else
+				menuNarzedzia2.setEnabled(false);
+		else if (s == menuPomocOProgramie)
+		{
+			JOptionPane.showMessageDialog(this, "written by gabr\n"
+					+ "program demonstruje użycie menu w javie", "TYTUŁ",
+					JOptionPane.INFORMATION_MESSAGE);
+		} else if (s == menuNarzedzia1)
+		{
+			try
+			{
+				String sMetry = JOptionPane
+						.showInputDialog("Podaj długość w metrach");
+				double metry = Double.parseDouble(sMetry);
+				double stopy = metry / 0.3048;
+				String sStopy = String.format("%.2f", stopy);
+				JOptionPane.showMessageDialog(null, sMetry + " metrów = "
+						+ sStopy + " stóp");
+			} catch (HeadlessException e1)
+			{
+				e1.printStackTrace();
+			} catch (NumberFormatException e1)
+			{
+				JOptionPane.showMessageDialog(this, "Podano złą wartość!",
+						"ERROR", JOptionPane.ERROR_MESSAGE);
+			}
+		} else if (s == menuPlikOtworz)
+		{
+			JFileChooser fc = new JFileChooser();
+			if (fc.showOpenDialog(this) == JFileChooser.APPROVE_OPTION)
+			{
+				File plik = fc.getSelectedFile();
+				try
+				{
+					Scanner skaner = new Scanner(plik);
+					while (skaner.hasNext())
+						notatnik.append(skaner.nextLine());
+				} catch (FileNotFoundException e1)
+				{
+					JOptionPane.showMessageDialog(this, "Plik nieznaleziono!",
+							"Error", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		} else if (s == menuPlikZapisz)
+		{
+			JFileChooser fc = new JFileChooser();
+			if (fc.showSaveDialog(this) == JFileChooser.APPROVE_OPTION)
+			{
+				File plik = fc.getSelectedFile();
+				try
+				{
+					PrintWriter pw = new PrintWriter(plik);
+					Scanner skaner = new Scanner(notatnik.getText());
+					while (skaner.hasNext())
+						pw.println(skaner.nextLine());
+					pw.close();
+				} catch (FileNotFoundException e1)
+				{
+					JOptionPane.showMessageDialog(this,
+							"Zła ścieżka do pliku!", "Error",
+							JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		} else if (s == bSzukaj)
+		{
+			String tekst = notatnik.getText();
+			String szukane = tSzukany.getText();
+			String wystapienia = "";
+			int i = 0;
+			int index;
+			int startIndex = 0;
+			while ((index = tekst.indexOf(szukane, startIndex)) != -1)
+			{
+				startIndex = index + szukane.length();
+				i++;
+				wystapienia = wystapienia + " " + index;
+			}
+			JOptionPane.showMessageDialog(this, szukane + " wystąpiło  " + i
+					+ " razy: " + wystapienia);
+		} else if(s == mpKopiuj)
+		{
+			wybranyTekst = notatnik.getSelectedText();
+		} else if(s == mpWklej)
+		{
+			notatnik.insert(wybranyTekst, notatnik.getCaretPosition());
+		} else if(s == mpDolacz)
+		{
+			notatnik.append("\n"+wybranyTekst);
+		}
+
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Menu.java&apos; to &apos;GUI 18 - JTextArea - zapis i odczyt z pliku/src&apos;&#x0A;- Original project: &apos;GUI 17 - JFileChooser&apos;&#x0A;- Destination element: &apos;GUI 18 - JTextArea - zapis i odczyt z pliku/src&apos;&#x0A;- Original element: &apos;Menu.java&apos;" description="Copy compilation unit" destination="=GUI 18 - JTextArea - zapis i odczyt z pliku/src" element1="/src&lt;{Menu.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1356875080083" units="1" version="1.0"/>
+</session>

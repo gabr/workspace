@@ -1,0 +1,18 @@
+import javax.swing.JFrame;
+
+public class Pass extends JFrame
+{
+	public Pass()
+	{
+		setSize(400, 400);
+		setTitle("Password");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+	public static void main(String[] args)
+	{
+
+	}
+
+}

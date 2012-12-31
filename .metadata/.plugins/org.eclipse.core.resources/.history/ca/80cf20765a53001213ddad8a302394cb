@@ -1,0 +1,36 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JFrame;
+
+
+public class CelToFahSuwak extends JFrame implements ActionListener
+{
+
+	private static final long serialVersionUID = 1L;
+	private JSlider sCel, sFah;
+
+	public CelToFahSuwak()
+	{
+		setSize(500, 300);
+		setTitle("Cel --> Fah");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		CelToFahSuwak app = new CelToFahSuwak();
+		app.setVisible(true);
+	}
+	
+	@Override
+	public void actionPerformed(ActionEvent arg0)
+	{
+		
+	}
+
+}

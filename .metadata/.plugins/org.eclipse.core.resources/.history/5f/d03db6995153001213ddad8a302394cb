@@ -1,0 +1,25 @@
+import javax.swing.JFrame;
+import javax.swing.JPasswordField;
+
+public class Pass extends JFrame
+{
+	
+	private JPasswordField pHaslo;
+	
+	public Pass()
+	{
+		setSize(400, 400);
+		setTitle("Password");
+		setLayout(null);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+	}
+
+	public static void main(String[] args)
+	{
+		Pass app = new Pass();
+		app.setVisible(true);
+	}
+
+}
