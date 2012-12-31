@@ -5,6 +5,7 @@ import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import de.javasoft.plaf.synthetica.SyntheticaBlackEyeLookAndFeel;
 
 public class CelToFahSuwak extends JFrame implements ChangeListener
 {
@@ -36,12 +37,25 @@ public class CelToFahSuwak extends JFrame implements ChangeListener
 //          }
 		
 //		try {
+//            UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+//
+//           } catch (Exception e) {
+//             System.err.println("Look and feel not set.");
+//           }
+		
+//		try {
 //            UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
 //
 //          } catch (Exception e) {
 //            System.err.println("Look and feel not set.");
 //          } 
 		
+		try {
+			UIManager.setLookAndFeel(new SyntheticaBlackEyeLookAndFeel());
+
+			} catch (Exception e) {
+			System.err.println("Look and feel not set.");
+			}
 		
 		sCel = new JSlider(-30, 100, 0);
 		sCel.setBounds(50, 50, 300, 50);

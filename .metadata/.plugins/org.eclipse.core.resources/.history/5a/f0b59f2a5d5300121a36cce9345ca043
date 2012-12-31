@@ -1,7 +1,6 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JSlider;
-import javax.swing.UIManager;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
@@ -20,28 +19,6 @@ public class CelToFahSuwak extends JFrame implements ChangeListener
 		setTitle("Cel --> Fah");
 		setLayout(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
-//		try {
-//            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());                
-//
-//            } catch (Exception e) {
-//              System.err.println("Look and feel not set.");
-//            }
-		
-//		try {
-//            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-//
-//          } catch (Exception e) {
-//        	  System.err.println("Look and feel not set.");
-//          }
-		
-//		try {
-//            UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
-//
-//          } catch (Exception e) {
-//            System.err.println("Look and feel not set.");
-//          } 
-		
 		
 		sCel = new JSlider(-30, 100, 0);
 		sCel.setBounds(50, 50, 300, 50);

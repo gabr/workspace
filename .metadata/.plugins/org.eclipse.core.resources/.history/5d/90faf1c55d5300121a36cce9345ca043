@@ -43,6 +43,9 @@ public class CelToFahSuwak extends JFrame implements ChangeListener
 //          } 
 		
 		
+		
+
+		
 		sCel = new JSlider(-30, 100, 0);
 		sCel.setBounds(50, 50, 300, 50);
 		sCel.setMajorTickSpacing(20);

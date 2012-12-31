@@ -42,6 +42,15 @@ public class CelToFahSuwak extends JFrame implements ChangeListener
 //            System.err.println("Look and feel not set.");
 //          } 
 		
+		try{ 
+			   UIManager.setLookAndFeel(
+			        UIManager.getSystemLookAndFeelClassName());
+			}
+			catch(Exception e){
+			 e.printStackTrace();
+			}
+		
+
 		
 		sCel = new JSlider(-30, 100, 0);
 		sCel.setBounds(50, 50, 300, 50);
