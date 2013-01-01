@@ -26,6 +26,7 @@
         <activity android:name=".View_Listener_Click"></activity>
         <activity android:name=".LinearyLayout"></activity>
         <activity android:name=".ButtonsList"></activity>
+        <activity android:name=".View_EditText"></activity>
     </application>
 
 </manifest>

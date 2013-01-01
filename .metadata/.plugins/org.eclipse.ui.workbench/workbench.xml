@@ -23,7 +23,7 @@
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="62" y="26"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="36" y="26"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
@@ -57,8 +57,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -239,12 +239,12 @@
 <hide_toolbar_item_id id="org.eclipse.debug.ui.commands.DropToFrame"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars>
-<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
+<fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="com.android.ide.eclipse.ddms.views.LogCatView" style="0">
 <fastViews>
 <view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
-<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.2989214"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29795396"/>
 <view id="org.eclipse.ui.console.ConsoleView" ratio="0.29923275"/>
 </fastViews>
 </fastViewBar>
@@ -330,6 +330,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="lineary_layout.xml" tooltip="PierwszaAplikacja/res/layout/lineary_layout.xml">
+<persistable path="/PierwszaAplikacja/res/layout/lineary_layout.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="view_listener_click.xml" tooltip="PierwszaAplikacja/res/layout/view_listener_click.xml">
+<persistable path="/PierwszaAplikacja/res/layout/view_listener_click.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="list_item_view_custom_list.xml" tooltip="PierwszaAplikacja/res/layout/list_item_view_custom_list.xml">
+<persistable path="/PierwszaAplikacja/res/layout/list_item_view_custom_list.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MainActivity.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java">
+<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/MainActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="PierwszaAplikacja/AndroidManifest.xml">
+<persistable path="/PierwszaAplikacja/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="buttons_list.xml" tooltip="PierwszaAplikacja/res/layout/buttons_list.xml">
+<persistable path="/PierwszaAplikacja/res/layout/buttons_list.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ButtonsList.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java">
+<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/ButtonsList.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="EditText.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/EditText.java">
+<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/EditText.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.CommonXmlEditor" name="edit_text.xml" tooltip="PierwszaAplikacja/res/layout/edit_text.xml">
+<persistable path="/PierwszaAplikacja/res/layout/edit_text.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="List_Custom_List.java" tooltip="PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/List_Custom_List.java">
+<persistable path="/PierwszaAplikacja/src/com/example/gabr/pierwszaaplikacja/List_Custom_List.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelToFahSuwak.java" tooltip="A test/src/CelToFahSuwak.java">
 <persistable path="/A test/src/CelToFahSuwak.java"/>
 </file>
@@ -344,36 +374,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="App.java" tooltip="GUI 24 - jDialog/src/App.java">
 <persistable path="/GUI 24 - jDialog/src/App.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Pass.java" tooltip="GUI 23 - JPasswordField/src/Pass.java">
-<persistable path="/GUI 23 - JPasswordField/src/Pass.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 22 - JColorChooser/src/Menu.java">
-<persistable path="/GUI 22 - JColorChooser/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 21 - JComboBox/src/Menu.java">
-<persistable path="/GUI 21 - JComboBox/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 20 - JPopupMenu/src/Menu.java">
-<persistable path="/GUI 20 - JPopupMenu/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 18 - JTextArea - zapis i odczyt z pliku/src/Menu.java">
-<persistable path="/GUI 18 - JTextArea - zapis i odczyt z pliku/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 17 - JFileChooser/src/Menu.java">
-<persistable path="/GUI 17 - JFileChooser/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 16 - JOptionPane/src/Menu.java">
-<persistable path="/GUI 16 - JOptionPane/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Menu.java" tooltip="GUI 13 - Menu/src/Menu.java">
-<persistable path="/GUI 13 - Menu/src/Menu.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionPanel.java" tooltip="GUI 16 - JOptionPane/src/OptionPanel.java">
-<persistable path="/GUI 16 - JOptionPane/src/OptionPanel.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CelsiusToFahrenheit.java" tooltip="GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java">
-<persistable path="/GUI 10 - JRadio bez ActionListener/src/CelsiusToFahrenheit.java"/>
 </file>
 </mruList>
 </workbench>

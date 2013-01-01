@@ -1,0 +1,27 @@
+package com.example.gabr.pierwszaaplikacja;
+
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class EditText extends Activity implements OnClickListener
+{
+	
+	Button imageButtonBack;
+	
+	@Override
+	protected void onCreate(Bundle saveInstanceState) {
+		super.onCreate(saveInstanceState);
+		setContentView(R.layout.edit_text);
+		
+	}
+
+	@Override
+	public void onClick(DialogInterface dialog, int which)
+	{
+
+	}
+
+}

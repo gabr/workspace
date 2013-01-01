@@ -1,0 +1,20 @@
+package com.example.gabr.pierwszaaplikacja;
+
+import android.app.Activity;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+
+public class EditText extends Activity implements OnClickListener
+{
+	public EditText()
+	{
+		
+	}
+
+	@Override
+	public void onClick(DialogInterface dialog, int which)
+	{
+		
+	}
+
+}

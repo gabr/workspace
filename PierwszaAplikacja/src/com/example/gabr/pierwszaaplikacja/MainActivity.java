@@ -20,7 +20,8 @@ public class MainActivity extends Activity {
 		String[] elementy_listy = { "Własna lista",
 									"Listener",
 									"Linear Layout",
-									"Buttons"};
+									"Buttons",
+									"Edit texts"};
 		ListView prosta_lista = (ListView) findViewById(R.id.listView1);
 		ArrayAdapter adapter_listy = new ArrayAdapter(this,
 				android.R.layout.simple_list_item_1, elementy_listy);
@@ -54,6 +55,12 @@ public class MainActivity extends Activity {
 	        	Intent startActivityButtons = new Intent(MainActivity.this,
 	        			ButtonsList.class);
 	        	startActivity(startActivityButtons);
+	        	break;
+	        	
+	        case 4:
+	        	Intent startActivityEditText = new Intent(MainActivity.this,
+	        			View_EditText.class);
+	        	startActivity(startActivityEditText);
 	        	break;
 	        }
 	 
