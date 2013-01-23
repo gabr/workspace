@@ -6,7 +6,7 @@ content_assist_proposals_background=72,73,75
 content_assist_proposals_foreground=184,185,187
 eclipse.preferences.version=1
 fontPropagated=true
-formatter_profile=_Eclipse-java-gabr
+formatter_profile=org.eclipse.jdt.ui.default_profile
 formatter_settings_version=12
 java_bracket=255,255,255
 java_comment_task_tag=172,193,172
@@ -29,7 +29,9 @@ org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.templates_migrated=true
+org.eclipse.jdt.ui.visibility.order=B,V,R,D,
 org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+outlinesortoption=T,SF,SI,SM,F,I,C,M,
 pf_coloring_argument=239,239,175
 pf_coloring_assignment=246,243,232
 pf_coloring_comment=127,159,127

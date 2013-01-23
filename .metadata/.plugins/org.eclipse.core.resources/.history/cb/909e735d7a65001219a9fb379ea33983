@@ -1,0 +1,19 @@
+import org.mariusz.classes.Ksiazka;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		Ksiazka kniga = null;
+		
+		try {
+			kniga = new Ksiazka("Star Wars", "Lucas", "Gorge Arek", 1992,
+					"Sciencefiction");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		//System.out.println(kniga);
+	}
+
+}

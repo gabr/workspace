@@ -1,0 +1,25 @@
+import org.mariusz.classes.Ksiazka;
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		Ksiazka kniga = null;
+		
+		try {
+			kniga = new Ksiazka("Star Wars", "Lucas", "Gorge Arek", 1992,
+					"Sciencefiction");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		String testowy = "Gorge Arek";
+		String inicjaly;
+		inicjaly = testowy.charAt(0)+".";
+		testowy = testowy.substring(testowy.indexOf(" ")+1);
+		System.out.println(testowy+" indexOf: "+testowy.indexOf(" "));
+		
+		//System.out.println(kniga);
+	}
+
+}

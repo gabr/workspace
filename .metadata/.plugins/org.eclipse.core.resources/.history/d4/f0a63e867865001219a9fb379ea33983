@@ -1,0 +1,13 @@
+import org.mariusz.classes.Ksiazka;
+
+public class test {
+
+	public static void main(String[] args) {
+		try {
+			Ksiazka kniga = new Ksiazka();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
