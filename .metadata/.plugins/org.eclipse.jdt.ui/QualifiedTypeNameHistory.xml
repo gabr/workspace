@@ -22,7 +22,6 @@
 <fullyQualifiedTypeName name="Kolo"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="java.util.Arrays"/>
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="Wyliczeniowy.DzienTygodnia"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -51,4 +50,5 @@
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="com.example.gabr.pierwszaaplikacja.R.id"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,87 @@
+package org.mariusz.classes;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Biblioteka {
+	private ArrayList<Ksiazka> ksiazki;
+	private int ileKsiazek;
+
+	public Biblioteka() {
+		this.ksiazki = new ArrayList<Ksiazka>();
+		this.ileKsiazek = 0;
+	}
+
+	public static void main(String[] args) {
+
+		Ksiazka kniga = null;
+
+		try {
+			kniga = new Ksiazka("Star Wars", "Lucas", "Gorge Arek", 1992,
+					"Sciencefiction");
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		Biblioteka filia = new Biblioteka();
+		filia.add(kniga);
+		filia.add(kniga);
+		filia.wypiszKsiazki_krotkiFormat();
+		filia.wypiszKsiazki_dlugiFormat();
+
+	}
+
+	public void addDialog() {
+		Scanner s = new Scanner(System.in);
+		String tytul, imiona, nazwisko, kategorie;
+		int rok;
+		Ksiazka nowa = null;
+
+		while (true) {
+			System.out.print("\n Prosze podać:");
+			System.out.print("\n\ttytul: ");
+			tytul = s.nextLine();
+			System.out.print("\n\timiona autora (oddzielone spacjami): ");
+			imiona = s.nextLine();
+			System.out.print("\n\tnazwisko autora: ");
+			nazwisko = s.nextLine();
+			System.out.print("\n\trok: ");
+			rok = s.nextInt();
+			System.out.print("\n\tkategorie (oddzielone średnikami): ");
+			kategorie = s.nextLine();
+			
+			try {
+				nowa = new Ksiazka(tytul, nazwisko, imiona, rok, kategorie);
+				break;
+			} catch (Exception e) {
+				continue;
+			}
+		}
+		
+		this.add(nowa);
+	}
+
+	public void add(Ksiazka k) {
+		ksiazki.add(k);
+	}
+
+	public void wypiszKsiazki_krotkiFormat() {
+		for (Ksiazka k : this.ksiazki)
+			k.ustawkrotkiFormatWyswietlania(true);
+		String lista = this.ksiazki.toString();
+		lista = lista.substring(1, lista.length() - 1);
+		lista = lista.replaceAll(", ", "\n");
+
+		System.out.println(lista);
+	}
+
+	public void wypiszKsiazki_dlugiFormat() {
+		for (Ksiazka k : this.ksiazki)
+			k.ustawkrotkiFormatWyswietlania(false);
+		String lista = this.ksiazki.toString();
+		lista = lista.substring(1, lista.length() - 1);
+		lista = lista.replaceAll(", ", "\n");
+
+		System.out.println(lista);
+	}
+}
