@@ -20,6 +20,10 @@ public class Ksiazka {
 	public Ksiazka(String tytul, String nazwiskoAutora, String imionaAutora,
 			int rok, String kategorie) throws Exception {
 
+		nazwiskoAutora = nazwiskoAutora.trim();
+		imionaAutora = imionaAutora.trim();
+		kategorie = kategorie.trim();
+		
 		if (nazwiskoAutora.isEmpty() || kategorie.isEmpty() || tytul.isEmpty()) {
 			Exception eEmptyString;
 			eEmptyString = new Exception(
@@ -54,6 +58,7 @@ public class Ksiazka {
 		inicjaly = imiona.charAt(0) + ".";
 		while (imiona.indexOf(" ") != -1) {
 			imiona = imiona.substring(imiona.indexOf(" ") + 1);
+			imiona = imiona.trim();
 			inicjaly += imiona.charAt(0) + ".";
 		}
 		if (this.krotkiFormatWyswietlania)
@@ -68,6 +73,41 @@ public class Ksiazka {
 
 	public void ustawkrotkiFormatWyswietlania(boolean format) {
 		this.krotkiFormatWyswietlania = format;
+	}
+	
+	public int getId(){
+		return this.id;
+	}
+	
+	public void setCzyWypozyczona(boolean stan){
+		this.czyWypozyczona = stan;
+	}
+	
+	public boolean setImiona(String imiona){
+		imiona = imiona.trim();
+		if(imiona.isEmpty()) return false;
+		this.imionaAutora = imiona;
+		return true;
+	}
+	
+	public boolean setNazwisko(String nazwisko){
+		nazwisko = nazwisko.trim();
+		if(nazwisko.isEmpty()) return false;
+		this.nazwiskoAutora = nazwisko;
+		return true;
+	}
+	
+	public boolean setTytul(String tytul){
+		tytul = tytul.trim();
+		if(tytul.isEmpty()) return false;
+		this.tytul = tytul;
+		return true;
+	}
+	
+	public boolean setRok(int rok){
+		if (rok < 1700 || rok > 2012) return false;
+		this.rok = rok;
+		return true;
 	}
 
 	static {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
-<window height="1042" width="1676" x="0" y="1">
+<window height="1050" width="1680" x="0" y="0">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="214"/>
@@ -34,34 +34,28 @@
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1355045894087" focus="true" label="Workspace - java-gabr">
 <editors>
-<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@f7177">
+<editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
-</presentation>
-</folder>
-</info>
-<info part="org.eclipse.ui.internal.EditorStack@f7177" ratio="0.5" ratioLeft="806" ratioRight="806" relationship="2" relative="DefaultEditorWorkbook">
-<folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<part id="2"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ksiazka.java" partName="Ksiazka.java" path="/mnt/datas/workspace/Mariusz/src/org/mariusz/classes/Ksiazka.java" title="Ksiazka.java" tooltip="Mariusz/src/org/mariusz/classes/Ksiazka.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Ksiazka.java" partName="Ksiazka.java" path="/mnt/datas/workspace/Mariusz/src/org/mariusz/classes/Ksiazka.java" title="Ksiazka.java" tooltip="Mariusz/src/org/mariusz/classes/Ksiazka.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mariusz/src/org/mariusz/classes/Ksiazka.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="992" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2440" selectionTopPixel="94"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Totek.java" partName="Totek.java" path="/mnt/datas/workspace/Lekcja 28 - ArrayList przykład praktyczny/src/Totek.java" title="Totek.java" tooltip="Lekcja 28 - ArrayList przykład praktyczny/src/Totek.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Lekcja 28 - ArrayList przykład praktyczny/src/Totek.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Biblioteka.java" partName="Biblioteka.java" path="/mnt/datas/workspace/Mariusz/src/org/mariusz/classes/Biblioteka.java" title="Biblioteka.java" tooltip="Mariusz/src/org/mariusz/classes/Biblioteka.java" workbook="org.eclipse.ui.internal.EditorStack@f7177">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Biblioteka.java" partName="Biblioteka.java" path="/mnt/datas/workspace/Mariusz/src/org/mariusz/classes/Biblioteka.java" title="Biblioteka.java" tooltip="Mariusz/src/org/mariusz/classes/Biblioteka.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Mariusz/src/org/mariusz/classes/Biblioteka.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1572" selectionTopPixel="622"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1202" selectionTopPixel="189"/>
 </editor>
 </editors>
 <views>
@@ -80,6 +74,7 @@
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Warnings (3 items)"/>
+<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="90" org.eclipse.ui.ide.markerType="571" org.eclipse.ui.ide.pathField="120" org.eclipse.ui.ide.resourceField="90" org.eclipse.ui.ide.severityAndDescriptionField="300"/>
@@ -89,6 +84,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
@@ -116,9 +114,6 @@
 </xmlDefinedFilters>
 </customFilters>
 </viewState>
-</view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
-<viewState/>
 </view>
 <view id="com.android.ide.eclipse.ddms.views.EmulatorControlView" partName="Emulator Control"/>
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
@@ -262,7 +257,7 @@
 <fastViewBars>
 <fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@d07588" orientation="512" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="0">
 <fastViews>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.21668743"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.21650124"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="1024" id="bottom" orientation="256" selectedTabId="org.eclipse.ui.console.ConsoleView" style="0">
@@ -271,7 +266,7 @@
 <view id="org.eclipse.jdt.ui.JavadocView" ratio="0.2989214"/>
 <view id="org.eclipse.jdt.ui.SourceView" ratio="0.3"/>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" ratio="0.29795396"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.29761904"/>
+<view id="org.eclipse.ui.console.ConsoleView" ratio="0.296957"/>
 </fastViews>
 </fastViewBar>
 <fastViewBar fastViewLocation="131072" id="right" orientation="512" selectedTabId="org.eclipse.ui.views.ContentOutline" style="0">
@@ -336,64 +331,21 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Mariusz/src/org/mariusz/classes/Biblioteka.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Mariusz/src/org/mariusz/classes/Ksiazka.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Mariusz/src/org/mariusz/classes/Ksiazka.java"/>
 </editors>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="930" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1961" y="0"/>
+<item historyLabel="Biblioteka.java" index="0">
+<position/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="566" y="0"/>
+<position info="not_deleted" x="1639" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="639" y="0"/>
+<position info="not_deleted" x="899" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1025" y="0"/>
+<position info="not_deleted" x="1713" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="775" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1101" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1604" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1484" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1854" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1650" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1676" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1710" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1735" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1770" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="1">
-<position info="not_deleted" x="1717" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1126" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="732" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1520" y="0"/>
+<position info="not_deleted" x="1922" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
 <position/>
@@ -402,91 +354,133 @@
 <position/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position/>
+<position info="not_deleted" x="1847" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="1922" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="1326" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2437" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="1824" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="1921" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="1989" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2422" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="2038" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2868" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2606" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="2121" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="1625" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="1011" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2160" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="1157" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
 <position/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="934" y="0"/>
+<position/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="922" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2557" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2374" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="571" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="609" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="641" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2416" y="0"/>
+</item>
+<item historyLabel="Biblioteka.java" index="0">
+<position info="not_deleted" x="2235" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2868" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2649" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2673" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2695" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2748" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
 <position/>
 </item>
-<item historyLabel="Biblioteka.java" index="0">
-<position/>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2868" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2865" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position/>
+<position info="not_deleted" x="2380" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="980" y="56"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1248" y="0"/>
+<position info="not_deleted" x="2532" y="0"/>
 </item>
-<item historyLabel="Ksiazka.java" index="2">
-<position info="not_deleted" x="858" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position/>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2850" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1356" y="0"/>
+<position info="not_deleted" x="2598" y="0"/>
+</item>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2440" y="0"/>
 </item>
 <item historyLabel="Biblioteka.java" index="0">
-<position/>
+<position info="not_deleted" x="325" y="0"/>
 </item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="680" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1424" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1425" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="683" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="524" y="5"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="2">
-<position info="not_deleted" x="1329" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="707" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1514" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1448" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="1507" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="699" y="0"/>
-</item>
-<item historyLabel="Ksiazka.java" index="2">
-<position info="not_deleted" x="992" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="569" y="0"/>
-</item>
-<item historyLabel="Biblioteka.java" index="0">
-<position info="not_deleted" x="703" y="0"/>
+<item historyLabel="Ksiazka.java" index="1">
+<position info="not_deleted" x="2440" y="0"/>
 </item>
 <item active="true" historyLabel="Biblioteka.java" index="0">
-<position/>
+<position info="not_deleted" x="325" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
