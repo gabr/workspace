@@ -1,6 +1,5 @@
 package org.mariusz.classes;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -24,8 +23,84 @@ public class Biblioteka {
 				"Fantasy");
 		filia.addParametry("Eragon", "Paolini", "Christopher", 2001, "fantasy");
 
-		filia.wypiszKsiazki(true);
+		filia.wypiszKsiazki(false);
 
+	}
+
+	public void szukajDialog() {
+
+		Scanner s = new Scanner(System.in);
+		String decyzja, wynik = "";
+		char znak = ' ';
+
+		while (znak != 'p' && znak != 'q') {
+			System.out.println("\n > Wybierz kategorię wyszukiwania:\n");
+			System.out.println("    ---------------------------");
+			System.out.println("    N. Nazwisko autora");
+			System.out.println("    T. Tutuł książki");
+			System.out.println("    K. Kategorie tematyczne");
+			System.out.println("    ---------------------------");
+			System.out.println("    p. powrót");
+			System.out.println("    ---------------------------");
+			System.out.print(" : ");
+			decyzja = s.nextLine();
+			znak = decyzja.toLowerCase().charAt(0);
+
+			switch (znak) {
+				case 'n' :
+					System.out.print(" > podaj nazwisko: ");
+					wynik = szukajPoNazwisku(s.nextLine()).toString();
+					break;
+
+				case 't' :
+					System.out.print(" > podaj tytuł: ");
+					wynik = szukajPoTytule(s.nextLine()).toString();
+					break;
+
+				case 'k' :
+					System.out.print(" > podaj jedną kategorię: ");
+					wynik = szukajPoKategorii(s.nextLine()).toString();
+					break;
+			}
+
+			if (!wynik.isEmpty()) {
+				wynik = wynik.substring(1, wynik.length() - 1);
+				wynik = wynik.replace(", ", "\n   ");
+				System.out.println("   " + wynik);
+				wynik = "";
+			}
+		}
+	}
+
+	public ArrayList<String> szukajPoNazwisku(String nazwisko) {
+		ArrayList<String> wynik = new ArrayList<String>();
+
+		for (Ksiazka k : this.ksiazki)
+			if (k.getNazwisko().contains(nazwisko))
+				wynik.add(k.toString());
+
+		return wynik;
+	}
+
+	public ArrayList<String> szukajPoTytule(String tytul) {
+		ArrayList<String> wynik = new ArrayList<String>();
+
+		for (Ksiazka k : this.ksiazki)
+			if (k.getTytul().contains(tytul))
+				wynik.add(k.toString());
+
+		return wynik;
+	}
+
+	public ArrayList<String> szukajPoKategorii(String kategoria) {
+		ArrayList<String> wynik = new ArrayList<String>();
+
+		for (Ksiazka k : this.ksiazki)
+			for (String s : k.getKategorie().split(";"))
+				if (s.equals(kategoria))
+					wynik.add(k.toString());
+
+		return wynik;
 	}
 
 	public void edycja(int id) {
@@ -83,7 +158,7 @@ public class Biblioteka {
 							System.out.print(" > podaj nowe kategorie\n");
 							System.out
 									.print(" ! Kategorie powinny być oddzielone średnikami.\n : ");
-							while (!k.setTytul(s.nextLine()))
+							while (!k.setKategorie(s.nextLine()))
 								System.out
 										.print(" ! pole nie moze byc puste\n : ");
 							break;
@@ -93,6 +168,7 @@ public class Biblioteka {
 	}
 
 	public void addDialog() {
+
 		Scanner s = new Scanner(System.in);
 		String tytul, imiona, nazwisko, kateg;
 		int rok;
@@ -136,6 +212,7 @@ public class Biblioteka {
 	}
 
 	public void add(Ksiazka k) {
+		this.ileKsiazek++;
 		ksiazki.add(k);
 	}
 

@@ -53,14 +53,11 @@ public class Ksiazka {
 	}
 
 	public String toString() {
-		String inicjaly, imiona;
-		imiona = this.imionaAutora;
-		inicjaly = imiona.charAt(0) + ".";
-		while (imiona.indexOf(" ") != -1) {
-			imiona = imiona.substring(imiona.indexOf(" ") + 1);
-			imiona = imiona.trim();
-			inicjaly += imiona.charAt(0) + ".";
-		}
+		String inicjaly = "";
+		
+		for(String s: this.imionaAutora.split(" "))
+			inicjaly += s.charAt(0)+".";
+		
 		if (this.krotkiFormatWyswietlania)
 			return id + " " + inicjaly + " " + this.nazwiskoAutora + " „"
 					+ this.tytul + "” " + (this.czyWypozyczona ? "tak" : "nie");
@@ -80,6 +77,7 @@ public class Ksiazka {
 	}
 	
 	public void setCzyWypozyczona(boolean stan){
+		if(this.czyWypozyczona == true && !stan) ++this.liczbaWypozyczen;
 		this.czyWypozyczona = stan;
 	}
 	
@@ -90,6 +88,10 @@ public class Ksiazka {
 		return true;
 	}
 	
+	public String getNazwisko(){
+		return this.nazwiskoAutora;
+	}
+	
 	public boolean setNazwisko(String nazwisko){
 		nazwisko = nazwisko.trim();
 		if(nazwisko.isEmpty()) return false;
@@ -97,10 +99,25 @@ public class Ksiazka {
 		return true;
 	}
 	
+	public String getTytul(){
+		return this.tytul;
+	}
+	
 	public boolean setTytul(String tytul){
 		tytul = tytul.trim();
 		if(tytul.isEmpty()) return false;
 		this.tytul = tytul;
+		return true;
+	}
+	
+	public String getKategorie(){
+		return this.kategorie;
+	}
+	
+	public boolean setKategorie(String kategorie){
+		kategorie = kategorie.trim();
+		if(kategorie.isEmpty()) return false;
+		this.kategorie = kategorie;
 		return true;
 	}
 	

@@ -1,0 +1,132 @@
+package org.mariusz.classes;
+
+public class Ksiazka {
+
+	private static int static_id;
+	private int id;
+	private String tytul;
+	private String nazwiskoAutora;
+	private String imionaAutora;
+	private int rok;
+	private String kategorie;
+	private boolean czyWypozyczona;
+	private int liczbaWypozyczen;
+	private boolean krotkiFormatWyswietlania;
+
+	public Ksiazka() throws Exception {
+		this("", "", "", 0, "");
+	}
+
+	public Ksiazka(String tytul, String nazwiskoAutora, String imionaAutora,
+			int rok, String kategorie) throws Exception {
+
+		nazwiskoAutora = nazwiskoAutora.trim();
+		imionaAutora = imionaAutora.trim();
+		kategorie = kategorie.trim();
+		
+		if (nazwiskoAutora.isEmpty() || kategorie.isEmpty() || tytul.isEmpty()) {
+			Exception eEmptyString;
+			eEmptyString = new Exception(
+					"Nazwisko autora, kategorie i tytul książki są wymagane!");
+			throw eEmptyString;
+		}
+
+		if (rok < 1700 || rok > 2012) {
+			Exception eZlyZakresRoku;
+			eZlyZakresRoku = new Exception(
+					"Rok książki musi zawierać się w zakresie [1700,...,2012]");
+			throw eZlyZakresRoku;
+		}
+
+		++static_id;
+		this.id = static_id;
+		this.czyWypozyczona = false;
+		this.liczbaWypozyczen = 0;
+
+		this.tytul = tytul;
+		this.nazwiskoAutora = nazwiskoAutora;
+		this.imionaAutora = imionaAutora;
+		this.rok = rok;
+		this.kategorie = kategorie;
+		this.krotkiFormatWyswietlania = true;
+
+	}
+
+	public String toString() {
+		String inicjaly, imiona;
+		imiona = this.imionaAutora;
+		inicjaly = imiona.charAt(0) + ".";
+		while (imiona.indexOf(" ") != -1) {
+			imiona = imiona.substring(imiona.indexOf(" ") + 1);
+			imiona = imiona.trim();
+			inicjaly += imiona.charAt(0) + ".";
+		}
+		if (this.krotkiFormatWyswietlania)
+			return id + " " + inicjaly + " " + this.nazwiskoAutora + " „"
+					+ this.tytul + "” " + (this.czyWypozyczona ? "tak" : "nie");
+		else
+			return "ID: " + id + " " + this.imionaAutora + " "
+					+ this.nazwiskoAutora + " „" + this.tytul + "” rok: "
+					+ this.rok + "r. kategorie: " + this.kategorie
+					+ "; wypozyczona: " + (this.czyWypozyczona ? "tak" : "nie");
+	}
+
+	public void ustawkrotkiFormatWyswietlania(boolean format) {
+		this.krotkiFormatWyswietlania = format;
+	}
+	
+	public int getId(){
+		return this.id;
+	}
+	
+	public void setCzyWypozyczona(boolean stan){
+		this.czyWypozyczona = stan;
+	}
+	
+	public boolean setImiona(String imiona){
+		imiona = imiona.trim();
+		if(imiona.isEmpty()) return false;
+		this.imionaAutora = imiona;
+		return true;
+	}
+	
+	public String getNazwisko(){
+		return this.nazwiskoAutora;
+	}
+	
+	public boolean setNazwisko(String nazwisko){
+		nazwisko = nazwisko.trim();
+		if(nazwisko.isEmpty()) return false;
+		this.nazwiskoAutora = nazwisko;
+		return true;
+	}
+	
+	public String getTytul(){
+		return this.tytul;
+	}
+	
+	public boolean setTytul(String tytul){
+		tytul = tytul.trim();
+		if(tytul.isEmpty()) return false;
+		this.tytul = tytul;
+		return true;
+	}
+	
+	public String getKategorie(){
+		return this.kategorie;
+	}
+	
+	public boolean setKategorie(String kategorie){
+		kategorie = kategorie.trim();
+	}
+	
+	public boolean setRok(int rok){
+		if (rok < 1700 || rok > 2012) return false;
+		this.rok = rok;
+		return true;
+	}
+
+	static {
+		static_id = 0;
+	}
+}
