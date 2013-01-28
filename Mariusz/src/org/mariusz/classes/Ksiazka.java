@@ -23,7 +23,7 @@ public class Ksiazka {
 		nazwiskoAutora = nazwiskoAutora.trim();
 		imionaAutora = imionaAutora.trim();
 		kategorie = kategorie.trim();
-		
+
 		if (nazwiskoAutora.isEmpty() || kategorie.isEmpty() || tytul.isEmpty()) {
 			Exception eEmptyString;
 			eEmptyString = new Exception(
@@ -54,10 +54,10 @@ public class Ksiazka {
 
 	public String toString() {
 		String inicjaly = "";
-		
-		for(String s: this.imionaAutora.split(" "))
-			inicjaly += s.charAt(0)+".";
-		
+
+		for (String s : this.imionaAutora.split(" "))
+			inicjaly += s.charAt(0) + ".";
+
 		if (this.krotkiFormatWyswietlania)
 			return id + " " + inicjaly + " " + this.nazwiskoAutora + " „"
 					+ this.tytul + "” " + (this.czyWypozyczona ? "tak" : "nie");
@@ -65,66 +65,82 @@ public class Ksiazka {
 			return "ID: " + id + " " + this.imionaAutora + " "
 					+ this.nazwiskoAutora + " „" + this.tytul + "” rok: "
 					+ this.rok + "r. kategorie: " + this.kategorie
-					+ "; wypozyczona: " + (this.czyWypozyczona ? "tak" : "nie");
+					+ "; wypozyczona (i zwrócona): " + this.liczbaWypozyczen
+					+ " razy obecnie: "
+					+ (this.czyWypozyczona ? "wypożyczona" : "nie wypożyczona");
 	}
 
 	public void ustawkrotkiFormatWyswietlania(boolean format) {
 		this.krotkiFormatWyswietlania = format;
 	}
-	
-	public int getId(){
+
+	public int getId() {
 		return this.id;
 	}
-	
-	public void setCzyWypozyczona(boolean stan){
-		if(this.czyWypozyczona == true && !stan) ++this.liczbaWypozyczen;
+
+	public boolean getCzyWypozyczona() {
+		return this.czyWypozyczona;
+	}
+
+	public void setCzyWypozyczona(boolean stan) {
+		if (this.czyWypozyczona == true && !stan)
+			++this.liczbaWypozyczen;
 		this.czyWypozyczona = stan;
 	}
-	
-	public boolean setImiona(String imiona){
+
+	public boolean setImiona(String imiona) {
 		imiona = imiona.trim();
-		if(imiona.isEmpty()) return false;
+		if (imiona.isEmpty())
+			return false;
 		this.imionaAutora = imiona;
 		return true;
 	}
-	
-	public String getNazwisko(){
+
+	public String getNazwisko() {
 		return this.nazwiskoAutora;
 	}
-	
-	public boolean setNazwisko(String nazwisko){
+
+	public boolean setNazwisko(String nazwisko) {
 		nazwisko = nazwisko.trim();
-		if(nazwisko.isEmpty()) return false;
+		if (nazwisko.isEmpty())
+			return false;
 		this.nazwiskoAutora = nazwisko;
 		return true;
 	}
-	
-	public String getTytul(){
+
+	public String getTytul() {
 		return this.tytul;
 	}
-	
-	public boolean setTytul(String tytul){
+
+	public boolean setTytul(String tytul) {
 		tytul = tytul.trim();
-		if(tytul.isEmpty()) return false;
+		if (tytul.isEmpty())
+			return false;
 		this.tytul = tytul;
 		return true;
 	}
-	
-	public String getKategorie(){
+
+	public String getKategorie() {
 		return this.kategorie;
 	}
-	
-	public boolean setKategorie(String kategorie){
+
+	public boolean setKategorie(String kategorie) {
 		kategorie = kategorie.trim();
-		if(kategorie.isEmpty()) return false;
+		if (kategorie.isEmpty())
+			return false;
 		this.kategorie = kategorie;
 		return true;
 	}
-	
-	public boolean setRok(int rok){
-		if (rok < 1700 || rok > 2012) return false;
+
+	public boolean setRok(int rok) {
+		if (rok < 1700 || rok > 2012)
+			return false;
 		this.rok = rok;
 		return true;
+	}
+	
+	public int getLiczbaWypozyczen() {
+		return this.liczbaWypozyczen;
 	}
 
 	static {
