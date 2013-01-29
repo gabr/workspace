@@ -113,8 +113,8 @@ public class Biblioteka {
 		String decyzja;
 		char znak = ' ';
 
-		while (znak != 'p' && znak != 'q') {
-			System.out.println(" > funkcje dodatkowe:\n");
+		while (znak != 'z' && znak != 'q' && znak != 'e') {
+			System.out.println(" > menu główne:\n");
 			System.out.println("    ---------------------------");
 			System.out.println("    1. Liczba książek (w tym liczba wypożyczonych)");
 			System.out.println("    2. Statystyka książek");
@@ -127,12 +127,12 @@ public class Biblioteka {
 
 			switch (znak) {
 				case '1':
-					System.out.println(filia.ileKsiazek());
+					filia.ileKsiazek();
 					Pausse();
 					break;
 					
 				case '2':
-					System.out.println(filia.statystyki());
+					filia.statystyki();
 					Pausse();
 					break;
 			}

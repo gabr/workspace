@@ -132,7 +132,7 @@ public class Biblioteka {
 					break;
 					
 				case '2':
-					System.out.println(filia.statystyki());
+					filia.statystyki();
 					Pausse();
 					break;
 			}

@@ -100,43 +100,15 @@ public class Biblioteka {
 					break;
 
 				case '8' :
-					funkcjeDodatkowe(filia);
+					funkcjeDodatkowe();
 					break;
 			}
 		}
 
 	}
 
-	public static void funkcjeDodatkowe(Biblioteka filia) {
-		System.out.println();
-		Scanner s = new Scanner(System.in);
-		String decyzja;
-		char znak = ' ';
+	public static void funkcjeDodatkowe() {
 
-		while (znak != 'p' && znak != 'q') {
-			System.out.println(" > funkcje dodatkowe:\n");
-			System.out.println("    ---------------------------");
-			System.out.println("    1. Liczba książek (w tym liczba wypożyczonych)");
-			System.out.println("    2. Statystyka książek");
-			System.out.println("    ---------------------------");
-			System.out.println("    p. powrót");
-			System.out.println("    ---------------------------");
-			System.out.print(" : ");
-			decyzja = s.nextLine();
-			znak = decyzja.toLowerCase().charAt(0);
-
-			switch (znak) {
-				case '1':
-					System.out.println(filia.ileKsiazek());
-					Pausse();
-					break;
-					
-				case '2':
-					System.out.println(filia.statystyki());
-					Pausse();
-					break;
-			}
-		}
 	}
 
 	public String ileKsiazek() {

@@ -127,12 +127,12 @@ public class Biblioteka {
 
 			switch (znak) {
 				case '1':
-					System.out.println(filia.ileKsiazek());
+					filia.ileKsiazek();
 					Pausse();
 					break;
 					
 				case '2':
-					System.out.println(filia.statystyki());
+					filia.statystyki();
 					Pausse();
 					break;
 			}

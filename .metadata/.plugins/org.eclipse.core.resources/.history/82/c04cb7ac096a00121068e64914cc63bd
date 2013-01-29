@@ -55,88 +55,54 @@ public class Biblioteka {
 			System.out.print(" : ");
 			decyzja = s.nextLine();
 			znak = decyzja.toLowerCase().charAt(0);
-
-			switch (znak) {
-				case '1' :
-					System.out.println("\n" + filia + "\n");
-					Pausse();
-					break;
-
-				case '2' :
-					System.out.println("\n" + filia.listaKsiazek(false) + "\n");
-					Pausse();
-					break;
-
-				case '3' :
-					filia.addDialog();
-					Pausse();
-					break;
-
-				case '4' :
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : ");
-					filia.edycja(s.nextInt());
-					s.nextLine();
-					break;
-
-				case '5' :
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : ");
-					filia.wypozyczanie(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-
-				case '6' :
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : ");
-					filia.zwrot(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-
-				case '7' :
-					filia.szukajDialog();
-					break;
-
-				case '8' :
-					funkcjeDodatkowe(filia);
-					break;
-			}
-		}
-
-	}
-
-	public static void funkcjeDodatkowe(Biblioteka filia) {
-		System.out.println();
-		Scanner s = new Scanner(System.in);
-		String decyzja;
-		char znak = ' ';
-
-		while (znak != 'p' && znak != 'q') {
-			System.out.println(" > funkcje dodatkowe:\n");
-			System.out.println("    ---------------------------");
-			System.out.println("    1. Liczba książek (w tym liczba wypożyczonych)");
-			System.out.println("    2. Statystyka książek");
-			System.out.println("    ---------------------------");
-			System.out.println("    p. powrót");
-			System.out.println("    ---------------------------");
-			System.out.print(" : ");
-			decyzja = s.nextLine();
-			znak = decyzja.toLowerCase().charAt(0);
-
-			switch (znak) {
+			
+			switch(znak){
 				case '1':
-					System.out.println(filia.ileKsiazek());
+					System.out.println("\n"+filia+"\n");
+					Pausse();
+					break;
+				
+				case '2':
+					System.out.println("\n"+filia.listaKsiazek(false)+"\n");
 					Pausse();
 					break;
 					
-				case '2':
-					System.out.println(filia.statystyki());
+				case '3':
+					filia.addDialog();
 					Pausse();
+					break;
+					
+				case '4':
+					System.out.println("\n > podaj numer ID książki");
+					System.out.print(" : "); filia.edycja(s.nextInt());
+					s.nextLine();
+					break;
+					
+				case '5':
+					System.out.println("\n > podaj numer ID książki");
+					System.out.print(" : "); filia.wypozyczanie(s.nextInt());
+					s.nextLine();
+					Pausse();
+					break;
+					
+				case '6':
+					System.out.println("\n > podaj numer ID książki");
+					System.out.print(" : "); filia.zwrot(s.nextInt());
+					s.nextLine();
+					Pausse();
+					break;
+					
+				case '7':
+					filia.szukajDialog();
+					break;
+					
+				case '8':
+					funkcjeDodatkowe();
 					break;
 			}
 		}
+
+
 	}
 
 	public String ileKsiazek() {
@@ -176,7 +142,7 @@ public class Biblioteka {
 			}
 
 		tmp = null;
-
+		
 		for (Ksiazka k : this.ksiazki) {
 			srednia += (double) k.getLiczbaWypozyczen();
 			if (k.getLiczbaWypozyczen() > 0)
@@ -399,7 +365,7 @@ public class Biblioteka {
 		this.ileKsiazek++;
 		ksiazki.add(k);
 	}
-
+	
 	public String toString() {
 		return this.listaKsiazek(true);
 	}
