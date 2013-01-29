@@ -32,72 +32,34 @@ public class Biblioteka {
 		filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
 				"Sciencefiction");
 
-		// main menu
-		System.out.println();
-		Scanner s = new Scanner(System.in);
-		String decyzja;
-		char znak = ' ';
+		System.out.println(filia.listaKsiazek(false));
 
-		while (znak != 'z' && znak != 'q' && znak != 'e') {
-			System.out.println(" > menu główne:\n");
-			System.out.println("    ---------------------------");
-			System.out.println("    1. Lista książek (format skrócony)");
-			System.out.println("    2. Lista książek (pełny format)");
-			System.out.println("    3. Dodaj nową książkę");
-			System.out.println("    4. Edytuj dane ksiązki");
-			System.out.println("    5. Wypożycz książkę");
-			System.out.println("    6. Zwróć książkę");
-			System.out.println("    7. Znajdź książkę");
-			System.out.println("    8. Funkcje dodatkowe => ...");
-			System.out.println("    ---------------------------");
-			System.out.println("    z. zamknij program");
-			System.out.println("    ---------------------------");
-			System.out.print(" : ");
-			decyzja = s.nextLine();
-			znak = decyzja.toLowerCase().charAt(0);
-			
-			switch(znak){
-				case '1':
-					System.out.println("\n"+filia+"\n");
-					Pausse();
-					break;
-				
-				case '2':
-					System.out.println("\n"+filia.listaKsiazek(false)+"\n");
-					Pausse();
-					break;
-					
-				case '3':
-					filia.addDialog();
-					Pausse();
-					break;
-					
-				case '4':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.edycja(s.nextInt());
-					s.nextLine();
-					break;
-					
-				case '5':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.wypozyczanie(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-					
-				case '6':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.zwrot(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-					
-				case '7':
-					filia.szukajDialog();
-					break;
-			}
-		}
+		filia.wypozyczanie(1);
+		filia.wypozyczanie(2);
+		filia.wypozyczanie(3);
+		filia.zwrot(1);
+		filia.zwrot(2);
+		filia.zwrot(3);
+		filia.wypozyczanie(1);
+		filia.wypozyczanie(2);
+		filia.wypozyczanie(3);
+		filia.zwrot(1);
+		filia.zwrot(2);
+		filia.zwrot(3);
+		filia.wypozyczanie(1);
 
+		filia.wypozyczanie(6);
+		filia.zwrot(6);
+		filia.wypozyczanie(6);
+		filia.zwrot(6);
+		filia.wypozyczanie(7);
+		filia.zwrot(7);
+
+		System.out.println(filia.ileKsiazek());
+
+		System.out.println(filia.listaKsiazek(false));
+
+		System.out.println(filia.statystyki());
 
 	}
 
@@ -126,7 +88,7 @@ public class Biblioteka {
 		double srednia = 0.00;
 
 		for (Ksiazka k : popularne)
-			for (int i = 0; i < popularne.size(); i++) {
+			for (int i = 0; i < popularne.size(); i++)
 				tmp = popularne.get(i);
 				if (k.getId() != tmp.getId()
 						&& k.getTytul().equals(tmp.getTytul())) {
@@ -135,7 +97,6 @@ public class Biblioteka {
 					popularne.remove(tmp);
 					i = 0;
 				}
-			}
 
 		tmp = null;
 		
@@ -360,10 +321,6 @@ public class Biblioteka {
 	public void add(Ksiazka k) {
 		this.ileKsiazek++;
 		ksiazki.add(k);
-	}
-	
-	public String toString() {
-		return this.listaKsiazek(true);
 	}
 
 	public String listaKsiazek(boolean format) {

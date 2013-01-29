@@ -142,10 +142,6 @@ public class Ksiazka {
 	public int getLiczbaWypozyczen() {
 		return this.liczbaWypozyczen;
 	}
-	
-	public void setLiczbaWypozyczen(int tmp) {
-		this.liczbaWypozyczen = tmp;
-	}
 
 	static {
 		static_id = 0;

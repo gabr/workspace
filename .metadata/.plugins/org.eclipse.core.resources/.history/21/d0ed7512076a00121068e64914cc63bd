@@ -76,6 +76,7 @@ public class Biblioteka {
 					System.out.println("\n > podaj numer ID książki");
 					System.out.print(" : "); filia.edycja(s.nextInt());
 					s.nextLine();
+					Pausse();
 					break;
 					
 				case '5':
@@ -94,6 +95,7 @@ public class Biblioteka {
 					
 				case '7':
 					filia.szukajDialog();
+					Pausse();
 					break;
 			}
 		}

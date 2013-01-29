@@ -39,7 +39,7 @@ public class Biblioteka {
 		char znak = ' ';
 
 		while (znak != 'z' && znak != 'q' && znak != 'e') {
-			System.out.println(" > menu główne:\n");
+			System.out.println("\n > menu główne:\n");
 			System.out.println("    ---------------------------");
 			System.out.println("    1. Lista książek (format skrócony)");
 			System.out.println("    2. Lista książek (pełny format)");
@@ -50,7 +50,7 @@ public class Biblioteka {
 			System.out.println("    7. Znajdź książkę");
 			System.out.println("    8. Funkcje dodatkowe => ...");
 			System.out.println("    ---------------------------");
-			System.out.println("    z. zamknij program");
+			System.out.println("    z. zakończ");
 			System.out.println("    ---------------------------");
 			System.out.print(" : ");
 			decyzja = s.nextLine();
@@ -76,24 +76,7 @@ public class Biblioteka {
 					System.out.println("\n > podaj numer ID książki");
 					System.out.print(" : "); filia.edycja(s.nextInt());
 					s.nextLine();
-					break;
-					
-				case '5':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.wypozyczanie(s.nextInt());
-					s.nextLine();
 					Pausse();
-					break;
-					
-				case '6':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.zwrot(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-					
-				case '7':
-					filia.szukajDialog();
 					break;
 			}
 		}
@@ -180,7 +163,7 @@ public class Biblioteka {
 		char znak = ' ';
 
 		while (znak != 'p' && znak != 'q') {
-			System.out.println("\n > Wybierz kategorię wyszukiwania:\n");
+			System.out.println(" > Wybierz kategorię wyszukiwania:\n");
 			System.out.println("    ---------------------------");
 			System.out.println("    N. Nazwisko autora");
 			System.out.println("    T. Tutuł książki");

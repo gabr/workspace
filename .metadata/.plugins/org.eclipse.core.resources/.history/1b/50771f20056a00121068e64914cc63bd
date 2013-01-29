@@ -35,11 +35,11 @@ public class Biblioteka {
 		// main menu
 		System.out.println();
 		Scanner s = new Scanner(System.in);
-		String decyzja;
+		String decyzja, wynik = "";
 		char znak = ' ';
 
-		while (znak != 'z' && znak != 'q' && znak != 'e') {
-			System.out.println(" > menu główne:\n");
+		while (znak != 'p' && znak != 'q') {
+			System.out.println("\n > menu główne:\n");
 			System.out.println("    ---------------------------");
 			System.out.println("    1. Lista książek (format skrócony)");
 			System.out.println("    2. Lista książek (pełny format)");
@@ -50,7 +50,7 @@ public class Biblioteka {
 			System.out.println("    7. Znajdź książkę");
 			System.out.println("    8. Funkcje dodatkowe => ...");
 			System.out.println("    ---------------------------");
-			System.out.println("    z. zamknij program");
+			System.out.println("    p. powrót");
 			System.out.println("    ---------------------------");
 			System.out.print(" : ");
 			decyzja = s.nextLine();
@@ -58,43 +58,7 @@ public class Biblioteka {
 			
 			switch(znak){
 				case '1':
-					System.out.println("\n"+filia+"\n");
-					Pausse();
-					break;
-				
-				case '2':
-					System.out.println("\n"+filia.listaKsiazek(false)+"\n");
-					Pausse();
-					break;
 					
-				case '3':
-					filia.addDialog();
-					Pausse();
-					break;
-					
-				case '4':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.edycja(s.nextInt());
-					s.nextLine();
-					break;
-					
-				case '5':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.wypozyczanie(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-					
-				case '6':
-					System.out.println("\n > podaj numer ID książki");
-					System.out.print(" : "); filia.zwrot(s.nextInt());
-					s.nextLine();
-					Pausse();
-					break;
-					
-				case '7':
-					filia.szukajDialog();
-					break;
 			}
 		}
 
