@@ -1,14 +1,7 @@
 package org.mariusz.classes;
 
-import java.io.EOFException;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Biblioteka {
@@ -18,61 +11,26 @@ public class Biblioteka {
 	public Biblioteka() {
 		this.ksiazki = new ArrayList<Ksiazka>();
 		this.ileKsiazek = 0;
-
-		Ksiazka k = null;
-		FileInputStream fis = null;
-		ObjectInputStream ois = null;
-		try {
-			fis = new FileInputStream("biblioteka.dat");
-			ois = new ObjectInputStream(fis);
-
-			try {
-				while (true) {
-					k = (Ksiazka) ois.readObject();
-					this.ksiazki.add(k);
-					++this.ileKsiazek;
-					Ksiazka.setId(this.ileKsiazek);
-				}
-			} catch (EOFException e) {
-			}
-
-		} catch (FileNotFoundException e) {
-		} catch (IOException e) {
-			e.printStackTrace();	
-		} catch (ClassNotFoundException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (ois != null)
-					ois.close();
-			} catch (IOException e) {
-			}
-			try {
-				if (fis != null)
-					fis.close();
-			} catch (IOException e) {
-			}
-		}
 	}
+
 	public static void main(String[] args) {
 
 		Biblioteka filia = new Biblioteka();
 
-//		 filia.addParametry("Star Wars", "Lucas", "Gorge Arek", 1992,
-//		 "Sciencefiction");
-//		 filia.addParametry("Lotr", "Tolkien", "John Ronald Reuel", 1982,
-//		 "Fantasy");
-//		 filia.addParametry("Eragon", "Paolini", "Christopher", 2001,
-//		 "fantasy;fun");
-//		 filia.addParametry("Kod Leonarda da Vinci", "Brown", "Dan", 2001,
-//		 "action");
-//		 filia.addParametry("Zasada dwóch", "Bane", "Darth", 2001,
-//		 "Sciencefiction");
-//		 filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
-//		 "Sciencefiction");
-//		 filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
-//		 "Sciencefiction");
-//		 filia.aktualizujDane();
+		filia.addParametry("Star Wars", "Lucas", "Gorge Arek", 1992,
+				"Sciencefiction");
+		filia.addParametry("Lotr", "Tolkien", "John Ronald Reuel", 1982,
+				"Fantasy");
+		filia.addParametry("Eragon", "Paolini", "Christopher", 2001,
+				"fantasy;fun");
+		filia.addParametry("Kod Leonarda da Vinci", "Brown", "Dan", 2001,
+				"action");
+		filia.addParametry("Zasada dwóch", "Bane", "Darth", 2001,
+				"Sciencefiction");
+		filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
+				"Sciencefiction");
+		filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
+				"Sciencefiction");
 
 		// main menu
 		System.out.println();
@@ -111,7 +69,6 @@ public class Biblioteka {
 
 				case '3' :
 					filia.addDialog();
-					filia.aktualizujDane();
 					Pausse();
 					break;
 
@@ -119,7 +76,6 @@ public class Biblioteka {
 					System.out.println("\n > podaj numer ID książki");
 					System.out.print(" : ");
 					filia.edycja(s.nextInt());
-					filia.aktualizujDane();
 					s.nextLine();
 					break;
 
@@ -128,7 +84,6 @@ public class Biblioteka {
 					System.out.print(" : ");
 					filia.wypozyczanie(s.nextInt());
 					s.nextLine();
-					filia.aktualizujDane();
 					Pausse();
 					break;
 
@@ -137,7 +92,6 @@ public class Biblioteka {
 					System.out.print(" : ");
 					filia.zwrot(s.nextInt());
 					s.nextLine();
-					filia.aktualizujDane();
 					Pausse();
 					break;
 
@@ -162,8 +116,7 @@ public class Biblioteka {
 		while (znak != 'p' && znak != 'q') {
 			System.out.println(" > funkcje dodatkowe:\n");
 			System.out.println("    ---------------------------");
-			System.out
-					.println("    1. Liczba książek (w tym liczba wypożyczonych)");
+			System.out.println("    1. Liczba książek (w tym liczba wypożyczonych)");
 			System.out.println("    2. Statystyka książek");
 			System.out.println("    ---------------------------");
 			System.out.println("    p. powrót");
@@ -173,12 +126,12 @@ public class Biblioteka {
 			znak = decyzja.toLowerCase().charAt(0);
 
 			switch (znak) {
-				case '1' :
+				case '1':
 					System.out.println(filia.ileKsiazek());
 					Pausse();
 					break;
-
-				case '2' :
+					
+				case '2':
 					System.out.println(filia.statystyki());
 					Pausse();
 					break;
@@ -213,11 +166,10 @@ public class Biblioteka {
 		for (int j = 0; j < popularne.size(); j++)
 			for (int i = 0; i < popularne.size(); i++) {
 				tmp = popularne.get(i);
-				if (popularne.get(j).getId() != tmp.getId()
-						&& popularne.get(j).getTytul().equals(tmp.getTytul())) {
-					popularne.get(j).setLiczbaWypozyczen(
-							popularne.get(j).getLiczbaWypozyczen()
-									+ tmp.getLiczbaWypozyczen());
+				if (k.getId() != tmp.getId()
+						&& k.getTytul().equals(tmp.getTytul())) {
+					k.setLiczbaWypozyczen(k.getLiczbaWypozyczen()
+							+ tmp.getLiczbaWypozyczen());
 					popularne.remove(tmp);
 					i = 0;
 					j = 0;
@@ -401,7 +353,7 @@ public class Biblioteka {
 			}
 	}
 
-	public boolean addDialog() {
+	public void addDialog() {
 
 		Scanner s = new Scanner(System.in);
 		String tytul, imiona, nazwisko, kateg;
@@ -420,19 +372,13 @@ public class Biblioteka {
 		System.out.print("    nazwisko autora: ");
 		nazwisko = s.nextLine();
 		System.out.print("    rok: ");
-		try {
-			rok = s.nextInt();
-		} catch (InputMismatchException e) {
-			System.out.println("    ! Zła wartość dla wartości rok!\n");
-			return false;
-		}
+		rok = s.nextInt();
 		s.nextLine();
 		System.out.print("    kategorie: ");
 		kateg = s.nextLine();
 		System.out.println("    ---------------------------");
 
 		this.addParametry(tytul, nazwisko, imiona, rok, kateg);
-		return true;
 	}
 
 	public void addParametry(String tytul, String nazwiskoAutora,
@@ -480,34 +426,6 @@ public class Biblioteka {
 		for (Ksiazka k : this.ksiazki)
 			if (k.getId() == id)
 				k.setCzyWypozyczona(false);
-	}
-
-	public void aktualizujDane() {
-		FileOutputStream fos = null;
-		ObjectOutputStream oos = null;
-		try {
-			fos = new FileOutputStream("biblioteka.dat");
-			oos = new ObjectOutputStream(fos);
-
-			for (Ksiazka k : this.ksiazki)
-				oos.writeObject(k);
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			try {
-				if (oos != null)
-					oos.close();
-			} catch (IOException e) {
-			}
-			try {
-				if (fos != null)
-					fos.close();
-			} catch (IOException e) {
-			}
-		}
 	}
 
 	static public void Pausse() {

@@ -151,7 +151,7 @@ public class Ksiazka implements Serializable{
 	}
 	
 	static void setId(int i) {
-		static_id = i;
+		static.id = i;
 	}
 
 	static {

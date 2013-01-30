@@ -149,10 +149,6 @@ public class Ksiazka implements Serializable{
 	public void setLiczbaWypozyczen(int tmp) {
 		this.liczbaWypozyczen = tmp;
 	}
-	
-	static void setId(int i) {
-		static_id = i;
-	}
 
 	static {
 		static_id = 0;

@@ -423,7 +423,7 @@ public class Biblioteka {
 		try {
 			rok = s.nextInt();
 		} catch (InputMismatchException e) {
-			System.out.println("    ! Zła wartość dla wartości rok!\n");
+			System.out.println("   ! Zła wartość dla wartości rok!\n");
 			return false;
 		}
 		s.nextLine();

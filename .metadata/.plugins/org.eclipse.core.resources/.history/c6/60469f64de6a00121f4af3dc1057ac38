@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Biblioteka {
@@ -423,7 +422,6 @@ public class Biblioteka {
 		try {
 			rok = s.nextInt();
 		} catch (InputMismatchException e) {
-			System.out.println("    ! Zła wartość dla wartości rok!\n");
 			return false;
 		}
 		s.nextLine();

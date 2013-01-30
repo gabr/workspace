@@ -8,7 +8,6 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Biblioteka {
@@ -401,7 +400,7 @@ public class Biblioteka {
 			}
 	}
 
-	public boolean addDialog() {
+	public void addDialog() {
 
 		Scanner s = new Scanner(System.in);
 		String tytul, imiona, nazwisko, kateg;
@@ -422,9 +421,6 @@ public class Biblioteka {
 		System.out.print("    rok: ");
 		try {
 			rok = s.nextInt();
-		} catch (InputMismatchException e) {
-			System.out.println("    ! Zła wartość dla wartości rok!\n");
-			return false;
 		}
 		s.nextLine();
 		System.out.print("    kategorie: ");
@@ -432,7 +428,6 @@ public class Biblioteka {
 		System.out.println("    ---------------------------");
 
 		this.addParametry(tytul, nazwisko, imiona, rok, kateg);
-		return true;
 	}
 
 	public void addParametry(String tytul, String nazwiskoAutora,
