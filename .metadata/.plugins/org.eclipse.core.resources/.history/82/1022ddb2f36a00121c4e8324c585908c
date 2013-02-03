@@ -58,6 +58,22 @@ public class Biblioteka {
 
 		Biblioteka filia = new Biblioteka();
 
+//		 filia.addParametry("Star Wars", "Lucas", "Gorge Arek", 1992,
+//		 "Sciencefiction");
+//		 filia.addParametry("Lotr", "Tolkien", "John Ronald Reuel", 1982,
+//		 "Fantasy");
+//		 filia.addParametry("Eragon", "Paolini", "Christopher", 2001,
+//		 "fantasy;fun");
+//		 filia.addParametry("Kod Leonarda da Vinci", "Brown", "Dan", 2001,
+//		 "action");
+//		 filia.addParametry("Zasada dwóch", "Bane", "Darth", 2001,
+//		 "Sciencefiction");
+//		 filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
+//		 "Sciencefiction");
+//		 filia.addParametry("Dynastia zła", "Bane", "Darth", 2001,
+//		 "Sciencefiction");
+//		 filia.aktualizujDane();
+
 		// main menu
 		System.out.println();
 		Scanner s = new Scanner(System.in);
