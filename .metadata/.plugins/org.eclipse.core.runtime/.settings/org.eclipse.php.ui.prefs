@@ -11,6 +11,7 @@ editorColorPhpdoc=\#B3B5AF | null | false | false | false | false
 editorColorString=\#CC9393 | null | false | false | false | false
 editorColorTask=\#ACC1AC | null | false | false | false | false
 editorColorVariable=\#D4C4A9 | null | false | false | false | false
+org.eclipse.php.core.workspaceDefaultLocale=pl_PL
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.ClassHighlighting.bold=false
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.ClassHighlighting.color=\#CAE682
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.ClassHighlighting.enabled=true
@@ -50,3 +51,5 @@ semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.StaticMetho
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.StaticMethodHighlighting.enabled=true
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.SuperGlobalHighlighting.color=\#D4C4A9
 semanticHighlighting.org.eclipse.php.internal.ui.editor.highlighters.SuperGlobalHighlighting.enabled=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true

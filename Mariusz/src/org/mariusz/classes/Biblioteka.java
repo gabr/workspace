@@ -12,6 +12,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Biblioteka {
+
 	private ArrayList<Ksiazka> ksiazki;
 	private int ileKsiazek;
 
@@ -20,6 +21,7 @@ public class Biblioteka {
 		this.ileKsiazek = 0;
 
 		Ksiazka k = null;
+
 		FileInputStream fis = null;
 		ObjectInputStream ois = null;
 		try {
@@ -38,7 +40,7 @@ public class Biblioteka {
 
 		} catch (FileNotFoundException e) {
 		} catch (IOException e) {
-			e.printStackTrace();	
+			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} finally {
@@ -54,6 +56,7 @@ public class Biblioteka {
 			}
 		}
 	}
+
 	public static void main(String[] args) {
 
 		Biblioteka filia = new Biblioteka();

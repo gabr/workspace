@@ -2,7 +2,7 @@ package org.mariusz.classes;
 
 import java.io.Serializable;
 
-public class Ksiazka implements Serializable{
+public class Ksiazka implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private static int static_id;
@@ -141,15 +141,15 @@ public class Ksiazka implements Serializable{
 		this.rok = rok;
 		return true;
 	}
-	
+
 	public int getLiczbaWypozyczen() {
 		return this.liczbaWypozyczen;
 	}
-	
+
 	public void setLiczbaWypozyczen(int tmp) {
 		this.liczbaWypozyczen = tmp;
 	}
-	
+
 	static void setId(int i) {
 		static_id = i;
 	}
