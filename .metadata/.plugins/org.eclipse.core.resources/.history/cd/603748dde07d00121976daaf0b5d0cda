@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Wyniki zamówienia</title>
+</head>
+<body>
+  <h1>Części samochodowe Janka</h1>
+  <h2>Wyniki zamówienia</h2>
+
+  <?php
+
+	echo "<p>Zamówienie przyjęte.</p>";
+
+  ?>
+
+</body>
+</html>

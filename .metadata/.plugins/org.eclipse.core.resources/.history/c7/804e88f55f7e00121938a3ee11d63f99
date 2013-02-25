@@ -1,0 +1,6 @@
+<?php
+
+// string gettype(mixed zmienna);
+// bool settype(mixed zmienna, string typ_zmiennej);
+
+?>

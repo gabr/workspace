@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Wyniki zamówienia</title>
+</head>
+<body>
+  <h1>Części samochodowe Janka</h1>
+  <h2>Wyniki zamówienia</h2>
+  <?php
+  
+  $iloscopon = $_POST["iloscopon"];
+  $iloscoleju = $_POST["iloscoleju"];
+  $iloscswiec = $_POST["iloscswiec"];
+
+  echo "<p>Zamówienie przyjęte o ".date('H:i. jS F Y')."</p>";
+
+  echo "<p>Zamówienie przedstawia się następująco:</p>";
+  echo $iloscopon." opon<br>";
+  echo $iloscoleju." oleju<br>";
+  echo $iloscswiec." swiec<br>";
+  
+  ?>
+</body>
+</html>

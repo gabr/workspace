@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+
+table {
+	border: 0;
+}
+
+#naglowek {
+	background-color: #cccccc;
+}
+
+tr > td:first-child {
+	width: 10em;
+}
+
+table:last-child {
+	margin: 0 auto 0 aut;
+}
+
+input {
+	width: 3em;
+}

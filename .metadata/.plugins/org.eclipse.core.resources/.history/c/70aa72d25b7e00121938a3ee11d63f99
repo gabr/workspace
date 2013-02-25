@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Wyniki zamówienia</title>
+</head>
+<body>
+  <h1>Części samochodowe Janka</h1>
+  <h2>Wyniki zamówienia</h2>
+  <?php
+  
+  define("CENAOPON", 100);
+  define("CENAOLEJU", 10);
+  define("CENASWIEC", 4);
+  
+  $iloscopon = $_POST["iloscopon"];
+  $iloscoleju = $_POST["iloscoleju"];
+  $iloscswiec = $_POST["iloscswiec"];
+  
+  $ilosc = 0;
+  $wartosc = 0.00;
+  //$wartosc = (float)$ilosc;
+
+  echo "<p>Zamówienie przyjęte o ".date('H:i. jS F Y')."</p>";
+
+  echo "<p>Zamówienie przedstawia się następująco:</p>";
+  echo $iloscopon." opon<br>";
+  echo $iloscoleju." oleju<br>";
+  echo $iloscswiec." swiec<br>";
+  
+  echo "<br>";
+  $dzielenie = @(18/0);
+  
+  echo "<br><br>";
+  phpinfo();
+  
+  ?>
+</body>
+</html>
